@@ -1,0 +1,287 @@
+{
+ "_note": "Hand-curated. Verify each claim at source before publishing. eu_regions = provider offers EU-located datacenters; cloud_act_exposure = HQ/parent under US jurisdiction. Claims checked 2026-10-19; each has status + url.",
+ "providers": [
+  {
+   "id": "ovhcloud",
+   "name": "OVHcloud",
+   "hq": "FR",
+   "eu_incorporated": true,
+   "eu_regions": true,
+   "dpa": "true (US DPA confirmed; EU DPA page 403 to our crawler)",
+   "cloud_act_exposure": "low (EU HQ; has US subsidiary)",
+   "affiliate_url": "#AFFILIATE_OVH",
+   "claims": [
+    {
+     "claim": "French company, founded 1999",
+     "status": "verified",
+     "url": "https://www.ovhcloud.com/en/about-us/"
+    },
+    {
+     "claim": "DPA exists",
+     "status": "partially verified: US entity DPA read; EU page blocked (403)",
+     "url": "https://us.ovhcloud.com/legal/data-processing-agreement/"
+    },
+    {
+     "claim": "EU regions / GPU offering",
+     "status": "verified (catalog API returns GPU plans)",
+     "url": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR"
+    }
+   ]
+  },
+  {
+   "id": "scaleway",
+   "name": "Scaleway",
+   "hq": "FR",
+   "eu_incorporated": true,
+   "eu_regions": true,
+   "dpa": true,
+   "cloud_act_exposure": "low",
+   "affiliate_url": "#AFFILIATE_SCALEWAY",
+   "claims": [
+    {
+     "claim": "Subsidiary of iliad Group; operates in FR, PL, IT, NL",
+     "status": "verified",
+     "url": "https://www.scaleway.com/en/about-us/"
+    },
+    {
+     "claim": "DPA downloadable",
+     "status": "verified",
+     "url": "https://www.scaleway.com/en/contracts/"
+    },
+    {
+     "claim": "GPU instances in EU zones",
+     "status": "verified (API zones fr-par-2, nl-ams-1, pl-waw-2)",
+     "url": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers"
+    }
+   ]
+  },
+  {
+   "id": "hetzner",
+   "name": "Hetzner",
+   "hq": "DE",
+   "eu_incorporated": true,
+   "eu_regions": true,
+   "dpa": true,
+   "cloud_act_exposure": "low",
+   "affiliate_url": "#AFFILIATE_HETZNER",
+   "claims": [
+    {
+     "claim": "Hetzner Online GmbH, Gunzenhausen, Germany",
+     "status": "verified",
+     "url": "https://www.hetzner.com/legal/legal-notice/"
+    },
+    {
+     "claim": "Standard DPA available (no individual DPAs)",
+     "status": "verified",
+     "url": "https://docs.hetzner.com/general/general-terms-and-conditions/data-privacy-faq/"
+    },
+    {
+     "claim": "GPU dedicated servers (GEX line)",
+     "status": "verified (prices not fetchable)",
+     "url": "https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"
+    }
+   ]
+  },
+  {
+   "id": "gcore",
+   "name": "Gcore",
+   "hq": "LU",
+   "eu_incorporated": true,
+   "eu_regions": true,
+   "dpa": true,
+   "cloud_act_exposure": "low (LU HQ; also has US regions e.g. Manassas)",
+   "affiliate_url": "#AFFILIATE_GCORE",
+   "claims": [
+    {
+     "claim": "Headquartered in Luxembourg, founded 2014",
+     "status": "verified",
+     "url": "https://gcore.com/about"
+    },
+    {
+     "claim": "Data Processing Agreement in legal docs",
+     "status": "verified",
+     "url": "https://gcore.com/legal"
+    },
+    {
+     "claim": "GPU cloud incl. Luxembourg region",
+     "status": "verified",
+     "url": "https://gcore.com/pricing/ai"
+    }
+   ]
+  },
+  {
+   "id": "nebius",
+   "name": "Nebius",
+   "hq": "NL",
+   "eu_incorporated": true,
+   "eu_regions": true,
+   "dpa": true,
+   "cloud_act_exposure": "medium (Nasdaq-listed, US regions)",
+   "affiliate_url": "#AFFILIATE_NEBIUS",
+   "claims": [
+    {
+     "claim": "Headquartered in Amsterdam, Nasdaq-listed",
+     "status": "verified",
+     "url": "https://nebius.com/about"
+    },
+    {
+     "claim": "DPA published",
+     "status": "verified",
+     "url": "https://docs.nebius.com/legal"
+    },
+    {
+     "claim": "EU regions",
+     "status": "unverified (not checked on a regions page)",
+     "url": "https://nebius.com/prices"
+    }
+   ]
+  },
+  {
+   "id": "verda",
+   "name": "Verda (ex-DataCrunch)",
+   "hq": "FI",
+   "eu_incorporated": true,
+   "eu_regions": "unverified",
+   "dpa": "true (Data Processing Terms in ToS)",
+   "cloud_act_exposure": "low",
+   "affiliate_url": "#AFFILIATE_VERDA",
+   "claims": [
+    {
+     "claim": "Founded in Helsinki; legal entity DataCrunch Oy",
+     "status": "verified",
+     "url": "https://verda.com/company"
+    },
+    {
+     "claim": "Data Processing Terms (section 10)",
+     "status": "verified",
+     "url": "https://verda.com/terms-and-conditions"
+    },
+    {
+     "claim": "Old datacrunch.io/about,/legal,/products URLs",
+     "status": "replaced (404, redirect to verda.com)",
+     "url": "https://verda.com/pricing"
+    }
+   ]
+  },
+  {
+   "id": "genesiscloud",
+   "name": "Genesis Cloud",
+   "hq": "DE (unverified)",
+   "eu_incorporated": "unverified",
+   "eu_regions": "unverified",
+   "dpa": "unverified",
+   "cloud_act_exposure": "unverified",
+   "affiliate_url": "#AFFILIATE_GENESIS",
+   "claims": [
+    {
+     "claim": "All claims",
+     "status": "unverified: www.genesiscloud.com TLS failure, apex returns Cloudflare 522 (site down or provider defunct?)",
+     "url": "https://www.genesiscloud.com/"
+    }
+   ]
+  },
+  {
+   "id": "runpod",
+   "name": "Runpod",
+   "hq": "US",
+   "eu_incorporated": false,
+   "eu_regions": "unverified (Runpod help mentions GDPR-compliant GPU filter)",
+   "dpa": "true (custom DPAs only ≥$3k/mo spend)",
+   "cloud_act_exposure": "high (US HQ)",
+   "affiliate_url": "#AFFILIATE_RUNPOD",
+   "claims": [
+    {
+     "claim": "Standard DPA published",
+     "status": "verified",
+     "url": "https://www.runpod.io/legal/data-processing-agreement"
+    },
+    {
+     "claim": "Custom DPA/BAA threshold $3,000/mo; GDPR GPU filter",
+     "status": "verified via search result, not opened",
+     "url": "https://contact.runpod.io/hc/en-us/articles/50120688006163-How-to-Find-HIPAA-GDPR-Compliant-GPUs-on-Runpod-and-Understand-BAA-Policy"
+    },
+    {
+     "claim": "US HQ",
+     "status": "unverified (not stated on pages checked)",
+     "url": "https://www.runpod.io/legal/data-processing-agreement"
+    }
+   ]
+  },
+  {
+   "id": "vast",
+   "name": "Vast.ai",
+   "hq": "US",
+   "eu_incorporated": false,
+   "eu_regions": "per-host (marketplace)",
+   "dpa": "true",
+   "cloud_act_exposure": "high (US HQ, third-party hosts)",
+   "affiliate_url": "#AFFILIATE_VAST",
+   "claims": [
+    {
+     "claim": "DPA, Vast.ai Inc. as processor under GDPR",
+     "status": "verified",
+     "url": "https://vast.ai/data-processing-agreement"
+    },
+    {
+     "claim": "US HQ",
+     "status": "partially verified (entity 'Vast.ai Inc.'; HQ city not checked)",
+     "url": "https://vast.ai/privacy"
+    },
+    {
+     "claim": "EU offers per host location",
+     "status": "verified (API geolocation field)",
+     "url": "https://console.vast.ai/api/v0/bundles/"
+    }
+   ]
+  },
+  {
+   "id": "lambda",
+   "name": "Lambda",
+   "hq": "US",
+   "eu_incorporated": false,
+   "eu_regions": "unverified",
+   "dpa": "unverified",
+   "cloud_act_exposure": "high (US HQ)",
+   "affiliate_url": "#AFFILIATE_LAMBDA",
+   "claims": [
+    {
+     "claim": "Lambda, Inc., Delaware corporation; California law",
+     "status": "verified",
+     "url": "https://lambda.ai/legal/terms-of-service"
+    },
+    {
+     "claim": "DPA",
+     "status": "unverified (no DPA link found; /legal/data-processing-addendum 404)",
+     "url": "https://lambda.ai/legal/privacy-policy"
+    }
+   ]
+  },
+  {
+   "id": "coreweave",
+   "name": "CoreWeave",
+   "hq": "US",
+   "eu_incorporated": false,
+   "eu_regions": "unverified",
+   "dpa": true,
+   "cloud_act_exposure": "high (US HQ)",
+   "affiliate_url": "#AFFILIATE_COREWEAVE",
+   "claims": [
+    {
+     "claim": "Address Livingston, NJ, USA",
+     "status": "verified",
+     "url": "https://www.coreweave.com/pricing"
+    },
+    {
+     "claim": "DPA published",
+     "status": "verified",
+     "url": "https://docs.coreweave.com/policies/terms-of-service/data-processing-agreement"
+    },
+    {
+     "claim": "EU regions",
+     "status": "unverified (old URLs 404)",
+     "url": "https://docs.coreweave.com/policies/terms-of-service"
+    }
+   ]
+  }
+ ]
+}

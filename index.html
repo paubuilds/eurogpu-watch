@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>EuroGPU.watch — GPU prices with EU data residency</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem;color:#1a1a2e}h1{margin:0}h1 span{color:#0033a0}
+.bar{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;align-items:center}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:6px 8px;border-bottom:1px solid #ddd;text-align:left}th{background:#0033a0;color:#fff;cursor:pointer}.eu{color:#087f23;font-weight:600}.us{color:#b00020}
+.news{background:#f3f6ff;padding:1rem;border-radius:8px;margin:2rem 0}small{color:#666}</style></head><body>
+<h1>EuroGPU<span>.watch</span></h1><p>Live GPU rental prices, filterable by EU data residency, DPA and CLOUD Act exposure. <small id="gen"></small></p>
+<div class="bar"><label>GPU <select id="gpu"><option value="">All</option></select></label>
+<label><input type="checkbox" id="euhq"> EU-incorporated provider only</label>
+<label><input type="checkbox" id="euloc"> EU-located offer only (where known)</label>
+<label>Sort <select id="sort"><option value="asc">Price ↑</option><option value="desc">Price ↓</option></select></label></div>
+<table><thead><tr><th>GPU</th><th>Provider</th><th>Tier</th><th>$/GPU-hr</th><th>Native</th><th>Location</th><th>HQ</th><th>DPA</th><th>CLOUD Act</th><th>Source / fetched</th><th></th></tr></thead><tbody id="t"></tbody></table>
+<p><small>Live EU-HQ feeds: OVHcloud, Scaleway, Verda, Nebius, Gcore. Hetzner &amp; Genesis Cloud: compliance data only. EUR prices converted with ECB rate (<span id=fx></span>); EU prices usually excl. VAT. Claims &amp; sources, see <a href="providers.json">providers.json</a>. Affiliate links are placeholders. Not legal advice.</small></p>
+<div class="news"><b>Weekly EU GPU price digest</b><form onsubmit="alert('Newsletter not connected yet (placeholder).');return false"><input type="email" placeholder="you@company.eu" required> <button>Subscribe</button></form><small>Placeholder — no newsletter provider connected.</small></div>
+<script>
+Promise.all([fetch('data/prices.json').then(r=>r.json()),fetch('providers.json').then(r=>r.json())]).then(([P,V])=>{
+const pv=Object.fromEntries(V.providers.map(p=>[p.id,p]));document.getElementById('gen').textContent='Data generated '+P.generated_at;document.getElementById('fx').textContent=P.fx.EURUSD+' on '+P.fx.date;
+const g=document.getElementById('gpu');[...new Set(P.prices.map(r=>r.gpu))].sort().forEach(x=>g.add(new Option(x,x)));
+function draw(){const s=document.getElementById('sort').value,eh=euhq.checked,el=euloc.checked;
+let rows=P.prices.filter(r=>(!g.value||r.gpu==g.value)&&(!eh||pv[r.provider]?.eu_incorporated)&&(!el||r.eu_location===true));
+rows.sort((a,b)=>s=='asc'?a.usd_hr-b.usd_hr:b.usd_hr-a.usd_hr);
+t.innerHTML=rows.map(r=>{const p=pv[r.provider]||{};return `<tr><td>${r.gpu}</td><td>${p.name||r.provider}</td><td>${r.tier||''}</td><td><b>${r.usd_hr==null?'n/a':'$'+r.usd_hr.toFixed(2)}</b></td><td>${r.currency=='EUR'?'€'+r.native_price_hr.toFixed(2):''}</td>
+<td class="${r.eu_location?'eu':''}">${r.location||'unspecified'}</td><td class="${p.eu_incorporated?'eu':'us'}">${p.hq||'?'}</td><td>${p.dpa}</td><td>${p.cloud_act_exposure||''}</td>
+<td><small><a href="${r.source.split(' ')[0]}">src</a> ${r.fetched_at}</small></td><td><a href="${p.affiliate_url||'#'}">Rent →</a></td></tr>`}).join('')||'<tr><td colspan=11>No live prices match (EU-HQ feeds not yet integrated).</td></tr>'}
+if(location.search.includes('eu=1'))euhq.checked=true;['gpu','sort','euhq','euloc'].forEach(i=>document.getElementById(i).onchange=draw);draw()});
+</script></body></html>
