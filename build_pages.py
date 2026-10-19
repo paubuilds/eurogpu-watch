@@ -6,10 +6,7 @@ SITE_ORIGIN = "https://paubuilds.github.io"
 BASE_PATH   = "/eurogpu-watch/"          # e.g. "/" for https://eurogpu.watch
 SITE = SITE_ORIGIN + BASE_PATH
 NAME = "EuroGPU.watch"
-GPUS = [  # slug, display name, regex matching normalized GPU names in data
- ("h100","H100",r"\bH100\b"),("h200","H200",r"\bH200\b"),("b200","B200",r"\bB200\b"),("a100","A100",r"\bA100\b"),
- ("l40s","L40S",r"\bL40S\b"),("l4","L4",r"^(NVIDIA )?L4$"),("rtx-4090","RTX 4090",r"4090"),("rtx-5090","RTX 5090",r"5090"),
- ("rtx-a6000","RTX A6000",r"A6000"),("rtx-pro-6000","RTX PRO 6000",r"PRO 6000"),("a10","A10",r"^A10$|\bA10 ")]
+from gpu_models import GPUS, cheapest
 e=html.escape
 P=json.load(open("data/prices.json")); V={p["id"]:p for p in json.load(open("providers.json"))["providers"]}
 GEN=P["generated_at"]; FX=P.get("fx") or {}
@@ -32,13 +29,13 @@ def loc(r):
     for pat,name in [(r"^fr-par","Paris, France"),(r"^pl-waw","Warsaw, Poland"),(r"^nl-ams","Amsterdam, Netherlands"),(r"^multi-region incl. Luxembourg","Includes Luxembourg"),(r"^EU regions","EU regions"),(r"^unspecified","Not specified")]:
         if re.match(pat,raw,re.I): raw=name
     return f'<div class="location-cell">{e(raw)}<span>{"EU location listed" if r.get("eu_location") is True else "Confirm region with provider"}</span></div>'
-def table(rs):
+def table(rs,best_all=None,best_eu=None):
     if not rs: return '<p class="page-empty">No live prices for this filter right now.</p>'
-    lo=min(r["usd_hr"] for r in rs); out=[]
+    out=[]
     for r in rs:
         p=V.get(r["provider"],{}); ex=exposure(p); nm=pname(r).replace(" (ex-DataCrunch)","")
         nat=f'€{r["native_price_hr"]:.2f} native rate' if r.get("currency")=="EUR" else "USD / GPU-hr"
-        out.append(f'<tr><td><div class="gpu-cell"><span class="provider-icon {e(r["provider"])}" aria-hidden="true">{e(SYM.get(r["provider"],nm[0]))}</span><div><strong>{e(r["gpu"])}{"<span class=best-tag>LOWEST</span>" if r["usd_hr"]==lo else ""}</strong><small>{e(nm)} · {e(r.get("tier") or "")}</small></div></div></td>'
+        out.append(f'<tr><td><div class="gpu-cell"><span class="provider-icon {e(r["provider"])}" aria-hidden="true">{e(SYM.get(r["provider"],nm[0]))}</span><div><strong>{e(r["gpu"])}{"<span class=best-tag>BEST PRICE</span>" if best_all is not None and r["usd_hr"]==best_all else ""}{"<span class=\"best-tag eu\">BEST EU</span>" if best_eu is not None and r["usd_hr"]==best_eu and V.get(r["provider"],{}).get("eu_incorporated") is True else ""}</strong><small>{e(nm)} · {e(r.get("tier") or "")}</small></div></div></td>'
           f'<td>{loc(r)}</td><td><span class="hq"><span class="hq-code">{e(str(p.get("hq","?")))}</span></span></td><td><span class="exposure {ex}" title="{e(str(p.get("cloud_act_exposure","Not verified")))}">{ex.capitalize()}</span></td>'
           f'<td><strong class="offer-price">${r["usd_hr"]:.2f}</strong><span class="native-price">{nat}</span></td>'
           f'<td><div class="row-actions"><a class="source-link" href="{e(r["source"].split(" ")[0])}" rel="nofollow noopener" target="_blank" title="Fetched {e(r["fetched_at"])}">Source</a>{rent(r)}</div></td></tr>')
@@ -76,7 +73,8 @@ def page(path,title,desc,body,ld):
 <footer class="site-footer wrap"><div class="footer-top"><a class="brand" href="{B}"><span class="brand-mark"><svg><use href="#chip"/></svg></span><span>EuroGPU<span class="brand-light">.watch</span></span></a><p>Data generated {e(GEN)} UTC from public provider APIs and pricing pages. EUR→USD at ECB rate {FX.get("EURUSD")} ({FX.get("date")}). EU prices usually exclude VAT. Not legal advice.</p><a href="#top">Back to top ↑</a></div>
 <div class="footer-bottom"><span>© 2026 EuroGPU.watch · Some links are referral links; we may earn credits at no cost to you. Rankings are by price only.</span><div><a href="{B}providers.json">Provider sources ↗</a><a href="{B}data/prices.json">Price data ↗</a><a href="{B}#newsletter">Newsletter</a></div></div>
 <nav class="footer-gpus" aria-label="GPU price pages">{nav()}</nav></footer>
-<script>document.querySelector('.menu-toggle').addEventListener('click',function(){{var n=document.querySelector('.site-header nav'),o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o));}});</script>
+<script>function ago(){{document.querySelectorAll('[data-ago]').forEach(function(el){{var m=Math.round((Date.now()-new Date(el.dataset.ago))/60000);el.textContent='updated '+(m<1?'just now':m<60?m+' min ago':Math.floor(m/60)+' h '+(m%60)+' min ago');}});}}ago();setInterval(ago,30000);
+document.querySelector('.menu-toggle').addEventListener('click',function(){{var n=document.querySelector('.site-header nav'),o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o));}});</script>
 </body></html>'''
     open(os.path.join(path.strip("/"),"index.html"),"w").write(html_)
 def claims_list(pids):
@@ -85,12 +83,32 @@ def claims_list(pids):
         p=V[pid]; c="; ".join(f'{e(x["claim"])} (<a href="{e(x["url"])}" rel=nofollow>{e(x["status"].split(" ")[0])}</a>)' for x in p.get("claims",[]))
         out.append(f"<li><b>{e(p['name'])}</b>: HQ {e(str(p['hq']))}, EU-incorporated: {e(str(p['eu_incorporated']))}, DPA: {e(str(p['dpa']))}, CLOUD Act exposure: {e(str(p['cloud_act_exposure']))}. {c}</li>")
     return '<ul class="claims">'+"".join(out)+"</ul>"
+HIST=json.load(open("data/history.json")) if os.path.exists("data/history.json") else {"points":[]}
+def spark_svg(name):
+    pts=[p for p in HIST.get("points",[]) if name in p.get("g",{})]
+    if len(pts)<2: return f'<p class="collecting">Collecting history since {e((HIST.get("started_at") or GEN)[:16].replace("T"," "))} UTC — chart appears after 2 snapshots.</p>'
+    ts=[datetime.datetime.fromisoformat(p["t"]).timestamp() for p in pts]; vals=[v for p in pts for v in (p["g"][name][0],p["g"][name][2]) if isinstance(v,(int,float))]
+    x0,x1,y0,y1=min(ts),max(ts),min(vals),max(vals); W,Hh=220,44
+    X=lambda t:0 if x1==x0 else (t-x0)/(x1-x0)*W; Y=lambda v:Hh/2 if y1==y0 else Hh-(v-y0)/(y1-y0)*(Hh-6)-3
+    def line(i): 
+        q=[(X(t),Y(p["g"][name][i])) for t,p in zip(ts,pts) if isinstance(p["g"][name][i],(int,float))]
+        return " ".join(("M" if k==0 else "L")+f"{x:.1f} {y:.1f}" for k,(x,y) in enumerate(q))
+    return f'<svg class="spark" viewBox="0 0 {W} {Hh}" preserveAspectRatio="none" role="img" aria-label="{e(name)} price history, {len(pts)} snapshots"><path d="{line(0)}" class="spark-all"/><path d="{line(2)}" class="spark-eu"/></svg><small>{len(pts)} snapshots since {e(HIST["started_at"][:10])} · purple = cheapest overall, green = cheapest EU company</small>'
+def stats_block(name,rx):
+    a=cheapest(P["prices"],V,rx); b=cheapest(P["prices"],V,rx,True)
+    if not a: return "",(None,None)
+    prem=(b["usd_hr"]/a["usd_hr"]-1)*100 if b else None
+    meter=(f'<div class="meter"><span style="width:{min(100,max(4,prem/2)):.0f}%"></span></div><small>{"No EU premium right now" if prem<=0.5 else f"EU premium +{prem:.0f}%"}: cheapest EU-company offer vs cheapest anywhere</small>' if prem is not None else '<div class="meter none"><span style="width:100%"></span></div><small>No EU-company offer right now</small>')
+    return (f'<div class="page-stats"><article class="pulse-card"><div class="pulse-prices"><div><span>Best price</span><b>${a["usd_hr"]:.2f}</b><small>{e(pname(a))}</small></div><div><span>Best EU</span><b>{"$%.2f"%b["usd_hr"] if b else "–"}</b><small>{e(pname(b)) if b else "none listed"}</small></div></div></article>'
+            f'<article class="pulse-card"><header><strong>EU premium</strong></header>{meter}</article><article class="pulse-card"><header><strong>Price history</strong></header>{spark_svg(name)}</article></div>'
+            f'<p class="price-note">Dataset <span data-ago="{e(GEN)}">generated {e(GEN[:16].replace("T"," "))} UTC</span>.</p>'), (a["usd_hr"], b["usd_hr"] if b else None)
 urls=[("",GEN)]
 # ---- per-GPU pages ----
 for slug,name,rx in GPUS:
     rs=rows_for(rx)
     if not rs: continue
-    eu=cheapest_per_provider([r for r in rs if is_eu(r)]); allc=cheapest_per_provider(rs)[:10]
+    eu=cheapest_per_provider([r for r in rs if is_eu(r)]); allc=rs[:25]
+    sb,(ba,be)=stats_block(name,rx)
     path=f"gpu/{slug}/"; ce=eu[0] if eu else None
     title=f"{name} price in Europe – cheapest EU / GDPR GPU cloud | {NAME}"
     desc=(f"Live {name} rental prices from EU-headquartered or EU-located providers. Cheapest right now: ${ce['usd_hr']:.2f}/GPU-hr at {pname(ce)}." if ce else f"Live {name} rental prices; no EU offer found at last update.")+f" Updated {GEN[:16]} UTC."
@@ -100,8 +118,8 @@ for slug,name,rx in GPUS:
          ("How are prices collected?","Prices are fetched automatically from each provider's public API or pricing page about every 15 minutes. Each row links to its source and fetch timestamp. EUR prices are converted at the ECB reference rate; EU prices usually exclude VAT."),
          ("Does an EU provider protect me from the US CLOUD Act?","Providers incorporated in the EU without a US parent generally carry lower CLOUD Act exposure than US-headquartered providers, but this is a simplification and not legal advice. See the EU / GDPR guide and each provider's sources.")]
     body=(f"<h1>{e(name)} price in Europe</h1><p>Live {e(name)} GPU rental prices, filtered for EU data residency. {len(rs)} live {e(name)} offers tracked; {len(eu)} providers with an EU-incorporated entity or EU-located host.</p>"
-          f"<h2>Cheapest EU {e(name)} per provider</h2>{table(eu)}<h2>Cheapest {e(name)} overall (any jurisdiction)</h2>{table(allc)}"
-          f"<h2>EU providers offering {e(name)}</h2>"+(claims_list(sorted({r['provider'] for r in eu if r['provider'] in V})) if eu else "<p>None at last update.</p>")+faq_html(faq))
+          +sb+f"<h2>Cheapest EU {e(name)} per provider</h2>{table(eu,ba,be)}<h2>All {e(name)} offers, cheapest first (any jurisdiction, top 25)</h2>{table(allc,ba,be)}"
+          +f"<h2>EU providers offering {e(name)}</h2>"+(claims_list(sorted({r['provider'] for r in eu if r['provider'] in V})) if eu else "<p>None at last update.</p>")+faq_html(faq))
     page(path,title,desc,body,[dataset_ld(f"{name} GPU rental prices in Europe",desc,path),faq_ld(faq)]); urls.append((path,GEN))
 # ---- EU / GDPR guide ----
 eu_all=sorted([r for r in P["prices"] if is_eu(r) and r.get("usd_hr") is not None],key=lambda r:r["usd_hr"])

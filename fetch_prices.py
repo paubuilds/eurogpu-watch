@@ -19,11 +19,12 @@ try:
 except Exception as e: status["watchworks"]=f"error {e}"
 # 2 runpod graphql (public, no key)
 try:
-    q='{"query":"{ gpuTypes { id displayName memoryInGb securePrice communityPrice } }"}'
+    q='{"query":"{ gpuTypes { id displayName memoryInGb securePrice communityPrice secureCloud communityCloud } }"}'
     d=get("https://api.runpod.io/graphql",q.encode(),{"content-type":"application/json"}); t=now(); n=0
     for g in d["data"]["gpuTypes"]:
-        for tier,k in (("secure","securePrice"),("community","communityPrice")):
-            if g.get(k): rows.append(dict(provider="runpod",gpu=g["displayName"],tier=tier,usd_hr=g[k],location=None,eu_location=None,
+        for tier,k,flag in (("secure","securePrice","secureCloud"),("community","communityPrice","communityCloud")):
+            # Runpod returns a 0.5 placeholder price for clouds where the GPU is not offered; only keep tiers flagged available
+            if g.get(k) and g.get(flag) is True: rows.append(dict(provider="runpod",gpu=g["displayName"],tier=tier,usd_hr=g[k],location=None,eu_location=None,
                 source="https://api.runpod.io/graphql (gpuTypes)",source_updated_at=None,fetched_at=t)); n+=1
     status["runpod"]=f"ok {n}"
 except Exception as e: status["runpod"]=f"error {e}"
@@ -82,6 +83,54 @@ def gcore():
     if not pr or len(pr)>len(gp): raise ValueError("layout changed")
     for g,p in zip(gp,pr): add("gcore",g,"GPU cloud bare-metal (per GPU, excl. VAT)",float(p),"EUR","multi-region incl. Luxembourg (see source)",None,u,t)
 for n,f in [("ovhcloud",ovh),("scaleway",scaleway),("verda",verda),("nebius",nebius),("gcore",gcore)]: run(n,f)
+
+# ---------- additional (non-EU-HQ) providers, public pages/APIs only ----------
+def page_text(u):
+    h=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) Chrome/130"}),timeout=30).read().decode("utf-8","ignore")
+    t=re.sub(r"<script.*?</script>|<style.*?</style>","",h,flags=re.S); t=H.unescape(re.sub(r"<[^>]+>"," | ",t)).replace("\xa0"," ").replace("\u202f"," "); return re.sub(r"(\s*\|\s*)+"," | ",t)
+def lambda_():
+    u="https://lambda.ai/pricing"; tx=page_text(u); t=now()
+    sec=tx.split("Instances pricing",1)[1].split("Private Cloud",1)[0]
+    tables=sec.split("PRICE/GPU/HR*")[1:]; sizes=["8x","4x","2x","1x"]
+    for size,tb in zip(sizes,tables):
+        tb=tb.split("plus applicable")[0]
+        for m in re.finditer(r"NVIDIA ([\w ]+?) \| (\d+) GB \| [^$]*?\$([\d.]+)",tb):
+            add("lambda",m.group(1),f"on-demand {size} instance ({m.group(2)} GB)",float(m.group(3)),"USD","unspecified (US regions)",None,u,t)
+    if not tables: raise ValueError("layout changed")
+def coreweave():
+    u="https://www.coreweave.com/pricing"; tx=page_text(u); t=now(); seen=set()
+    for m in re.finditer(r"(NVIDIA [^|]+?) \| (\d+) \| [\d,]+ \| [\d,]+ \| [\d,]+ \| [\d.,]+ \| \$([\d,.]+) \| \1 \| On-Demand Price",tx):
+        k=(m.group(1),m.group(2))
+        if k in seen: continue
+        seen.add(k); n=int(m.group(2))
+        add("coreweave",m.group(1).replace("HGX ",""),f"on-demand {n}-GPU node",float(m.group(3).replace(",","")),"USD","unspecified",None,u,t,n)
+    if not seen: raise ValueError("layout changed")
+def digitalocean():
+    u="https://www.digitalocean.com/pricing/gpu-droplets"; tx=page_text(u); t=now(); n=0
+    for m in re.finditer(r"((?:NVIDIA|AMD)[^|]{2,40}?) \| \$([\d.]+) \| /GPU/hour \| On-Demand Price",tx):
+        g=m.group(1).replace("HGX ","").replace("Instinct™ ","").replace(" Generation","")
+        add("digitalocean",g,"GPU Droplet on-demand",float(m.group(2)),"USD","unspecified",None,u,t); n+=1
+    if not n: raise ValueError("layout changed")
+def hyperstack():
+    u="https://www.hyperstack.cloud/gpu-pricing"; tx=page_text(u); t=now()
+    sec=tx.split("Pricing Per Hour |",1)[1].split("Reservation",1)[0]
+    for m in re.finditer(r"NVIDIA ([^|]+?) \| \d+ \| \d+ \| \d+ \| \$([\d.]+)",sec):
+        add("hyperstack",m.group(1),"on-demand",float(m.group(2)),"USD","unspecified (UK/EU/NA regions)",None,u,t)
+def vultr():
+    u="https://api.vultr.com/v2/plans?type=vcg&per_page=500"; d=get(u); t=now()
+    for p in d["plans"]:
+        if p.get("gpu_count") and p.get("hourly_cost"):
+            add("vultr",p["gpu_type"].replace("NVIDIA_","").replace("_"," "),f"Cloud GPU {p['id']}",p["hourly_cost"],"USD","unspecified (no locations listed in API)",None,u,t,p["gpu_count"])
+def crusoe():
+    u="https://www.crusoe.ai/cloud/pricing"; tx=page_text(u); t=now()
+    sec=tx.split("GPU instances pricing",1)[1].split("Managed Inference",1)[0].split("pricing |",1)[0]
+    n=0
+    for m in re.finditer(r"(?:NVIDIA|AMD) ([^|]+?) \| (\d+GB) \| ([^|]+) \| \$([\d.]+)/GPU-hr",sec):
+        add("crusoe",f"{m.group(1)} {m.group(3).strip()} {m.group(2)}","on-demand",float(m.group(4)),"USD","unspecified",None,u,t); n+=1
+    if not n: raise ValueError("layout changed")
+for n,fn in [("lambda",lambda_),("coreweave",coreweave),("digitalocean",digitalocean),("hyperstack",hyperstack),("vultr",vultr),("crusoe",crusoe)]: run(n,fn)
+status["paperspace"]="skipped: now part of DigitalOcean; pricing page mixes promo/3-year-commitment prices, DigitalOcean GPU Droplets tracked instead"
+status["tensordock"]="skipped: public marketplace API/pages return 404/401 without account"
 status["hetzner"]="skipped: GEX GPU prices are rendered client-side only after interaction; no public API without account token"
 status["genesiscloud"]="skipped: www.genesiscloud.com TLS handshake fails from this host (curl err 35, headless Chrome empty)"
 # FX: ECB daily reference rate, for USD comparison column only
@@ -102,3 +151,7 @@ status['dedupe']=f"removed {_n-len(rows)} watchworks runpod rows (Runpod API use
 import os; os.makedirs("data",exist_ok=True)
 json.dump({"generated_at":now(),"status":status,"fx":fx,"prices":rows},open("data/prices.json","w"),indent=1)
 print(status, len(rows))
+# append compact snapshot to data/history.json (cheapest overall + cheapest EU-company per GPU model)
+try:
+    import update_history; print("history points:", update_history.run())
+except Exception as e: print("history update failed:", e)

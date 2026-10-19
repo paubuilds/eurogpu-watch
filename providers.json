@@ -262,6 +262,11 @@
      "claim": "DPA",
      "status": "unverified (no DPA link found; /legal/data-processing-addendum 404)",
      "url": "https://lambda.ai/legal/privacy-policy"
+    },
+    {
+     "claim": "Public on-demand instance prices (plus sales tax/VAT)",
+     "status": "verified",
+     "url": "https://lambda.ai/pricing"
     }
    ],
    "link_is_referral": false
@@ -290,9 +295,116 @@
      "claim": "EU regions",
      "status": "unverified (old URLs 404)",
      "url": "https://docs.coreweave.com/policies/terms-of-service"
+    },
+    {
+     "claim": "Public on-demand node prices (8-GPU nodes; per-GPU computed by dividing)",
+     "status": "verified",
+     "url": "https://www.coreweave.com/pricing"
     }
    ],
    "link_is_referral": false
+  },
+  {
+   "id": "digitalocean",
+   "name": "DigitalOcean",
+   "hq": "US",
+   "eu_incorporated": false,
+   "eu_regions": "unverified for GPU Droplets",
+   "dpa": true,
+   "cloud_act_exposure": "high (US company)",
+   "affiliate_url": "https://www.digitalocean.com/pricing/gpu-droplets",
+   "link_is_referral": false,
+   "claims": [
+    {
+     "claim": "DPA published; contracting entity DigitalOcean, LLC; covers EU/EEA/UK data",
+     "status": "verified",
+     "url": "https://www.digitalocean.com/legal/data-processing-agreement"
+    },
+    {
+     "claim": "Paperspace is part of DigitalOcean",
+     "status": "verified",
+     "url": "https://www.paperspace.com/pricing"
+    },
+    {
+     "claim": "US HQ",
+     "status": "partially verified (US LLC entity in DPA; HQ city not checked)",
+     "url": "https://www.digitalocean.com/legal/data-processing-agreement"
+    }
+   ]
+  },
+  {
+   "id": "hyperstack",
+   "name": "Hyperstack (NexGen Cloud)",
+   "hq": "GB",
+   "eu_incorporated": false,
+   "eu_regions": "unverified (claims 'EU-Sovereign')",
+   "dpa": "true (data processing page linked in site footer; contents not checked)",
+   "cloud_act_exposure": "low-medium (UK company, not EU; UK GDPR)",
+   "affiliate_url": "https://www.hyperstack.cloud/gpu-pricing",
+   "link_is_referral": false,
+   "claims": [
+    {
+     "claim": "NexGen Cloud founded 2020, 'UK-owned and EU-Sovereign'; head office London, UK; office in Spain",
+     "status": "verified",
+     "url": "https://www.nexgencloud.com/about"
+    },
+    {
+     "claim": "Hyperstack is a NexGen Cloud brand",
+     "status": "verified (site footer)",
+     "url": "https://www.hyperstack.cloud/gpu-pricing"
+    },
+    {
+     "claim": "Data processing terms",
+     "status": "unverified (link found, page not read)",
+     "url": "https://www.hyperstack.cloud/data-processing"
+    }
+   ]
+  },
+  {
+   "id": "vultr",
+   "name": "Vultr",
+   "hq": "US",
+   "eu_incorporated": false,
+   "eu_regions": "unverified for GPU plans (API lists no locations)",
+   "dpa": "true (on request via console/account manager)",
+   "cloud_act_exposure": "high (US HQ)",
+   "affiliate_url": "https://www.vultr.com/pricing/",
+   "link_is_referral": false,
+   "claims": [
+    {
+     "claim": "HQ 319 Clematis Street, West Palm Beach, FL, USA",
+     "status": "verified via search result (site blocks our crawler, 403)",
+     "url": "https://www.vultr.com/company/contact/"
+    },
+    {
+     "claim": "DPA offered on request for GDPR customers",
+     "status": "verified via search result",
+     "url": "https://docs.vultr.com/support/platform/compliance/does-vultr-offer-a-data-processing-addendum"
+    }
+   ]
+  },
+  {
+   "id": "crusoe",
+   "name": "Crusoe",
+   "hq": "US (unverified)",
+   "eu_incorporated": false,
+   "eu_regions": "unverified",
+   "dpa": "true (Data Processing and Security Terms)",
+   "cloud_act_exposure": "high (US company, unverified HQ)",
+   "affiliate_url": "https://www.crusoe.ai/cloud/pricing",
+   "link_is_referral": false,
+   "claims": [
+    {
+     "claim": "Data Processing and Security Terms incorporated in cloud agreement",
+     "status": "verified via search result",
+     "url": "https://legal.crusoe.ai/"
+    },
+    {
+     "claim": "US company (agreement references US export law; HQ not checked)",
+     "status": "unverified",
+     "url": "https://legal.crusoe.ai/"
+    }
+   ]
   }
  ]
 }
