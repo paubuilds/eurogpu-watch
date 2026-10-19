@@ -58,7 +58,6 @@
 .nl-field{padding:5px 5px 5px 18px}
 .email-field .nl-btn{width:auto;height:auto;display:inline-block;background:var(--ink);color:#fff;border-radius:100px;padding:11px 20px;font-size:12px;font-weight:700;white-space:nowrap}
 .email-field .nl-btn:hover{background:#62477d}
-.nav-nl{background:#f8f3ff;border-radius:100px;padding:8px 14px!important}
 .nl-strip{margin-top:-22px;position:relative;z-index:3;background:#fff;border:1px solid #e8e4e1;border-radius:24px;box-shadow:0 14px 40px #4f37601a;padding:22px 26px;display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:center}
 .nl-strip-copy{display:flex;gap:16px;align-items:center}
 .nl-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:#d2f8c0;flex-shrink:0}
