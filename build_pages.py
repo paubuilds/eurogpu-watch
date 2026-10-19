@@ -23,14 +23,27 @@ def rent(r):
     p=V.get(r["provider"],{}); u=p.get("affiliate_url")
     if not u: return ""
     rel="sponsored nofollow noopener" if p.get("link_is_referral") else "nofollow noopener"
-    return f'<a href="{e(u)}" target="_blank" rel="{rel}">Rent →</a>'
+    return f'<a class="rent-link" href="{e(u)}" target="_blank" rel="{rel}" aria-label="Rent at {e(p.get("name",""))}"><svg><use href="#external"/></svg></a>'
+SYM={"gcore":"G","ovhcloud":"ovh","scaleway":"≋","verda":"v","nebius":"∷","runpod":"⬡","vast":"V"}
+def exposure(p):
+    m=re.match(r"(low|medium|high)",str(p.get("cloud_act_exposure","")),re.I); return m.group(1).lower() if m else "unknown"
+def loc(r):
+    raw=r.get("location") or "Not specified"
+    for pat,name in [(r"^fr-par","Paris, France"),(r"^pl-waw","Warsaw, Poland"),(r"^nl-ams","Amsterdam, Netherlands"),(r"^multi-region incl. Luxembourg","Includes Luxembourg"),(r"^EU regions","EU regions"),(r"^unspecified","Not specified")]:
+        if re.match(pat,raw,re.I): raw=name
+    return f'<div class="location-cell">{e(raw)}<span>{"EU location listed" if r.get("eu_location") is True else "Confirm region with provider"}</span></div>'
 def table(rs):
-    if not rs: return "<p>No live prices for this filter right now.</p>"
-    t="".join(f"<tr><td>{e(r['gpu'])}</td><td>{e(pname(r))}</td><td>{e(r.get('tier') or '')}</td><td><b>${r['usd_hr']:.2f}</b></td>"
-      f"<td>{'€%.2f'%r['native_price_hr'] if r.get('currency')=='EUR' else ''}</td><td>{e(r.get('location') or 'unspecified')}</td>"
-      f"<td>{e(V.get(r['provider'],{}).get('hq',''))}</td><td><a href=\"{e(r['source'].split(' ')[0])}\" rel=nofollow>source</a> {e(r['fetched_at'])}</td><td>{rent(r)}</td></tr>" for r in rs)
-    return f"<table><thead><tr><th>GPU</th><th>Provider</th><th>Offer</th><th>$/GPU-hr</th><th>Native</th><th>Location</th><th>HQ</th><th>Source / fetched (UTC)</th><th></th></tr></thead><tbody>{t}</tbody></table>"
-CSS="body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem;color:#1a1a2e;line-height:1.5}a{color:#0033a0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:6px 8px;border-bottom:1px solid #ddd;text-align:left}th{background:#0033a0;color:#fff}small,.muted{color:#666}nav a{margin-right:.6rem}details{margin:.4rem 0}"
+    if not rs: return '<p class="page-empty">No live prices for this filter right now.</p>'
+    lo=min(r["usd_hr"] for r in rs); out=[]
+    for r in rs:
+        p=V.get(r["provider"],{}); ex=exposure(p); nm=pname(r).replace(" (ex-DataCrunch)","")
+        nat=f'€{r["native_price_hr"]:.2f} native rate' if r.get("currency")=="EUR" else "USD / GPU-hr"
+        out.append(f'<tr><td><div class="gpu-cell"><span class="provider-icon {e(r["provider"])}" aria-hidden="true">{e(SYM.get(r["provider"],nm[0]))}</span><div><strong>{e(r["gpu"])}{"<span class=best-tag>LOWEST</span>" if r["usd_hr"]==lo else ""}</strong><small>{e(nm)} · {e(r.get("tier") or "")}</small></div></div></td>'
+          f'<td>{loc(r)}</td><td><span class="hq"><span class="hq-code">{e(str(p.get("hq","?")))}</span></span></td><td><span class="exposure {ex}" title="{e(str(p.get("cloud_act_exposure","Not verified")))}">{ex.capitalize()}</span></td>'
+          f'<td><strong class="offer-price">${r["usd_hr"]:.2f}</strong><span class="native-price">{nat}</span></td>'
+          f'<td><div class="row-actions"><a class="source-link" href="{e(r["source"].split(" ")[0])}" rel="nofollow noopener" target="_blank" title="Fetched {e(r["fetched_at"])}">Source</a>{rent(r)}</div></td></tr>')
+    return ('<div class="comparison"><div class="table-scroll"><table><thead><tr><th>GPU / Provider</th><th>Location</th><th>HQ</th><th>CLOUD Act exposure</th><th>Price / GPU-hr</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody>'
+            +"".join(out)+"</tbody></table></div></div>")
 def head(title,desc,path,ld):
     url=SITE+path
     return (f'<title>{e(title)}</title>\n<meta name="description" content="{e(desc)}">\n<link rel="canonical" href="{url}">\n'
@@ -39,23 +52,39 @@ def head(title,desc,path,ld):
       + "".join(f'<script type="application/ld+json">{json.dumps(x,ensure_ascii=False)}</script>\n' for x in ld))
 def nav():
     return '<a href="%s">Home</a>'%BASE_PATH + "".join(f'<a href="{BASE_PATH}gpu/{s}/">{n}</a>' for s,n,rx in GPUS if rows_for(rx)) + f'<a href="{BASE_PATH}eu-gdpr-gpu-cloud/">EU / GDPR guide</a>'
-def faq_html(faq): return "<h2>FAQ</h2>"+"".join(f"<details open><summary><b>{e(q)}</b></summary><p>{a}</p></details>" for q,a in faq)
+def faq_html(faq): return '<section class="faq page-faq" aria-labelledby="faq-title"><div><div class="eyebrow">GOOD QUESTIONS</div><h2 id="faq-title">FAQ</h2><span class="faq-asterisk" aria-hidden="true">✳</span></div><div class="faq-items">'+"".join(f"<details><summary>{e(q)}<span>+</span></summary><p>{a}</p></details>" for q,a in faq)+"</div></section>"
 def faq_ld(faq): return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub("<[^>]+>","",a)}} for q,a in faq]}
 def dataset_ld(name,desc,path):
     return {"@context":"https://schema.org","@type":"Dataset","name":name,"description":desc,"url":SITE+path,"dateModified":GEN,
       "creator":{"@type":"Organization","name":NAME,"url":SITE},"isAccessibleForFree":True,
       "distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"data/prices.json"}],
       "variableMeasured":"GPU rental price per GPU-hour (USD; EUR converted at ECB reference rate)"}
+ICONS=open("index.html").read().split('<svg class="icon-library"',1)[1].split("</svg>",1)[0] if os.path.exists("index.html") else ""
 def page(path,title,desc,body,ld):
     os.makedirs(path.strip("/") or ".",exist_ok=True)
-    open(os.path.join(path.strip("/"),"index.html"),"w").write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n{head(title,desc,path,ld)}<style>{CSS}</style></head><body><nav>{nav()}</nav>{body}'
-      f'<hr><p class="muted"><small>Data generated {e(GEN)} UTC from public provider APIs and pricing pages. EUR→USD at ECB rate {FX.get("EURUSD")} ({FX.get("date")}). EU prices usually exclude VAT. Not legal advice. Some links are referral links; we may earn credits at no cost to you. Rankings are by price only. <a href="{BASE_PATH}">Live table</a> · <a href="{BASE_PATH}providers.json">providers.json</a> · <a href="{BASE_PATH}data/prices.json">prices.json</a></small></p></body></html>')
+    m=re.match(r"<h1>(.*?)</h1><p>(.*?)</p>",body,re.S); h1,lede=(m.group(1),m.group(2)) if m else (e(title),""); rest=body[m.end():] if m else body
+    B=BASE_PATH
+    html_=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#d6c5f4">
+{head(title,desc,path,ld)}<link rel="icon" type="image/svg+xml" href="{B}assets/favicon.svg"><link rel="stylesheet" href="{B}assets/style.css"><link rel="stylesheet" href="{B}assets/pages.css"></head><body>
+<svg class="icon-library" {ICONS}</svg>
+<div class="hero-shell page-shell" id="top"><header class="site-header wrap"><a class="brand" href="{B}" aria-label="EuroGPU.watch home"><span class="brand-mark"><svg><use href="#chip"/></svg></span><span>EuroGPU<span class="brand-light">.watch</span></span></a>
+<nav aria-label="Main navigation"><a href="{B}#explore">GPU prices</a><a href="{B}gpu/h100/">H100</a><a href="{B}gpu/a100/">A100</a><a href="{B}gpu/l40s/">L40S</a><a href="{B}eu-gdpr-gpu-cloud/">EU &amp; GDPR guide</a></nav>
+<a class="button nav-button" href="{B}#explore">All prices <svg><use href="#arrow"/></svg></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button></header>
+<section class="page-hero wrap"><p class="hero-overline">LIVE · UPDATED {e(GEN[:16].replace("T"," "))} UTC</p><h1>{h1}</h1><p class="page-lede">{lede}</p></section></div>
+<main class="page-body wrap">{rest}</main>
+<section class="newsletter wrap page-news"><div><div class="eyebrow">YOUR WEEKLY COMPUTE CHECK-IN</div><h2>Good GPUs.<br>Great finds. Your inbox.</h2><p>The cheapest GPUs in Europe, once a week.</p></div><p><a class="button" href="{B}#newsletter">Subscribe on the home page <svg><use href="#arrow"/></svg></a></p></section>
+<footer class="site-footer wrap"><div class="footer-top"><a class="brand" href="{B}"><span class="brand-mark"><svg><use href="#chip"/></svg></span><span>EuroGPU<span class="brand-light">.watch</span></span></a><p>Data generated {e(GEN)} UTC from public provider APIs and pricing pages. EUR→USD at ECB rate {FX.get("EURUSD")} ({FX.get("date")}). EU prices usually exclude VAT. Not legal advice.</p><a href="#top">Back to top ↑</a></div>
+<div class="footer-bottom"><span>© 2026 EuroGPU.watch · Some links are referral links; we may earn credits at no cost to you. Rankings are by price only.</span><div><a href="{B}providers.json">Provider sources ↗</a><a href="{B}data/prices.json">Price data ↗</a><a href="{B}#newsletter">Newsletter</a></div></div>
+<nav class="footer-gpus" aria-label="GPU price pages">{nav()}</nav></footer>
+<script>document.querySelector('.menu-toggle').addEventListener('click',function(){{var n=document.querySelector('.site-header nav'),o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o));}});</script>
+</body></html>'''
+    open(os.path.join(path.strip("/"),"index.html"),"w").write(html_)
 def claims_list(pids):
     out=[]
     for pid in pids:
         p=V[pid]; c="; ".join(f'{e(x["claim"])} (<a href="{e(x["url"])}" rel=nofollow>{e(x["status"].split(" ")[0])}</a>)' for x in p.get("claims",[]))
         out.append(f"<li><b>{e(p['name'])}</b>: HQ {e(str(p['hq']))}, EU-incorporated: {e(str(p['eu_incorporated']))}, DPA: {e(str(p['dpa']))}, CLOUD Act exposure: {e(str(p['cloud_act_exposure']))}. {c}</li>")
-    return "<ul>"+"".join(out)+"</ul>"
+    return '<ul class="claims">'+"".join(out)+"</ul>"
 urls=[("",GEN)]
 # ---- per-GPU pages ----
 for slug,name,rx in GPUS:
