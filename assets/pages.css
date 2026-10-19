@@ -1,0 +1,26 @@
+/* Styles for generated GPU / guide pages and home footer nav; extends the design's style.css */
+.page-shell{padding-bottom:56px}
+.page-hero{padding:28px 0 8px}
+.page-hero h1{font-size:64px;line-height:1.02;letter-spacing:-3px;font-weight:650;margin-top:14px;max-width:900px}
+.page-lede{font-size:16px;line-height:1.75;color:#51465f;margin-top:22px;max-width:760px}
+.hero-overline{font-size:10px;font-weight:800;letter-spacing:1.6px;color:#5d4a78}
+.page-body{padding-top:70px}
+.page-body>h2{font-size:34px;letter-spacing:-1.6px;margin:56px 0 22px}
+.page-body>h2:first-child{margin-top:0}
+.page-body .comparison{margin-bottom:12px}
+.page-empty{background:#fff;border:1px solid #e8e4e1;border-radius:22px;padding:28px;color:#76717d}
+.row-actions{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.source-link{font-size:10px;font-weight:700;padding:8px 11px;border-radius:20px;background:#f3eff8;color:#5d4a78}
+.source-link:hover{background:#e8def5}
+.claims{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.claims li{background:#fff;border:1px solid #e8e4e1;border-radius:18px;padding:18px 22px;font-size:12px;line-height:1.8;color:#5f566a}
+.claims li b{color:#252232;font-size:14px}
+.claims a{text-decoration:underline;text-underline-offset:3px;color:#60428a}
+.page-faq{padding-block:80px}
+.page-faq details p a{text-decoration:underline}
+.page-news{margin-bottom:20px}
+.footer-gpus{display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:18px;font-size:10px;font-weight:600;color:#7d7186}
+.footer-gpus a:hover{text-decoration:underline}
+.footer-end{padding-top:12px}
+@media(max-width:900px){.page-hero h1{font-size:44px;letter-spacing:-2px}.page-body{padding-top:44px}}
+@media(max-width:620px){.page-hero h1{font-size:34px;letter-spacing:-1.4px}.page-lede{font-size:13px}.page-body>h2{font-size:26px}.claims li{padding:14px 16px;font-size:11px}}
