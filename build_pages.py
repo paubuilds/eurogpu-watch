@@ -19,12 +19,17 @@ def rows_for(rx): return sorted([r for r in P["prices"] if r.get("usd_hr") is no
 def cheapest_per_provider(rs):
     out={}; [out.setdefault(r["provider"],r) for r in rs]; return list(out.values())
 def pname(r): return V.get(r["provider"],{}).get("name",r["provider"])
+def rent(r):
+    p=V.get(r["provider"],{}); u=p.get("affiliate_url")
+    if not u: return ""
+    rel="sponsored nofollow noopener" if p.get("link_is_referral") else "nofollow noopener"
+    return f'<a href="{e(u)}" target="_blank" rel="{rel}">Rent →</a>'
 def table(rs):
     if not rs: return "<p>No live prices for this filter right now.</p>"
     t="".join(f"<tr><td>{e(r['gpu'])}</td><td>{e(pname(r))}</td><td>{e(r.get('tier') or '')}</td><td><b>${r['usd_hr']:.2f}</b></td>"
       f"<td>{'€%.2f'%r['native_price_hr'] if r.get('currency')=='EUR' else ''}</td><td>{e(r.get('location') or 'unspecified')}</td>"
-      f"<td>{e(V.get(r['provider'],{}).get('hq',''))}</td><td><a href=\"{e(r['source'].split(' ')[0])}\" rel=nofollow>source</a> {e(r['fetched_at'])}</td></tr>" for r in rs)
-    return f"<table><thead><tr><th>GPU</th><th>Provider</th><th>Offer</th><th>$/GPU-hr</th><th>Native</th><th>Location</th><th>HQ</th><th>Source / fetched (UTC)</th></tr></thead><tbody>{t}</tbody></table>"
+      f"<td>{e(V.get(r['provider'],{}).get('hq',''))}</td><td><a href=\"{e(r['source'].split(' ')[0])}\" rel=nofollow>source</a> {e(r['fetched_at'])}</td><td>{rent(r)}</td></tr>" for r in rs)
+    return f"<table><thead><tr><th>GPU</th><th>Provider</th><th>Offer</th><th>$/GPU-hr</th><th>Native</th><th>Location</th><th>HQ</th><th>Source / fetched (UTC)</th><th></th></tr></thead><tbody>{t}</tbody></table>"
 CSS="body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem;color:#1a1a2e;line-height:1.5}a{color:#0033a0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:6px 8px;border-bottom:1px solid #ddd;text-align:left}th{background:#0033a0;color:#fff}small,.muted{color:#666}nav a{margin-right:.6rem}details{margin:.4rem 0}"
 def head(title,desc,path,ld):
     url=SITE+path
@@ -44,7 +49,7 @@ def dataset_ld(name,desc,path):
 def page(path,title,desc,body,ld):
     os.makedirs(path.strip("/") or ".",exist_ok=True)
     open(os.path.join(path.strip("/"),"index.html"),"w").write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n{head(title,desc,path,ld)}<style>{CSS}</style></head><body><nav>{nav()}</nav>{body}'
-      f'<hr><p class="muted"><small>Data generated {e(GEN)} UTC from public provider APIs and pricing pages. EUR→USD at ECB rate {FX.get("EURUSD")} ({FX.get("date")}). EU prices usually exclude VAT. Not legal advice. <a href="{BASE_PATH}">Live table</a> · <a href="{BASE_PATH}providers.json">providers.json</a> · <a href="{BASE_PATH}data/prices.json">prices.json</a></small></p></body></html>')
+      f'<hr><p class="muted"><small>Data generated {e(GEN)} UTC from public provider APIs and pricing pages. EUR→USD at ECB rate {FX.get("EURUSD")} ({FX.get("date")}). EU prices usually exclude VAT. Not legal advice. Some links are referral links; we may earn credits at no cost to you. Rankings are by price only. <a href="{BASE_PATH}">Live table</a> · <a href="{BASE_PATH}providers.json">providers.json</a> · <a href="{BASE_PATH}data/prices.json">prices.json</a></small></p></body></html>')
 def claims_list(pids):
     out=[]
     for pid in pids:

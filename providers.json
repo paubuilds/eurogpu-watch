@@ -9,7 +9,7 @@
    "eu_regions": true,
    "dpa": "true (US DPA confirmed; EU DPA page 403 to our crawler)",
    "cloud_act_exposure": "low (EU HQ; has US subsidiary)",
-   "affiliate_url": "#AFFILIATE_OVH",
+   "affiliate_url": "https://www.ovhcloud.com/en/public-cloud/prices/",
    "claims": [
     {
      "claim": "French company, founded 1999",
@@ -26,7 +26,8 @@
      "status": "verified (catalog API returns GPU plans)",
      "url": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "scaleway",
@@ -36,7 +37,7 @@
    "eu_regions": true,
    "dpa": true,
    "cloud_act_exposure": "low",
-   "affiliate_url": "#AFFILIATE_SCALEWAY",
+   "affiliate_url": "https://www.scaleway.com/en/pricing/gpu/",
    "claims": [
     {
      "claim": "Subsidiary of iliad Group; operates in FR, PL, IT, NL",
@@ -53,7 +54,8 @@
      "status": "verified (API zones fr-par-2, nl-ams-1, pl-waw-2)",
      "url": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "hetzner",
@@ -63,7 +65,7 @@
    "eu_regions": true,
    "dpa": true,
    "cloud_act_exposure": "low",
-   "affiliate_url": "#AFFILIATE_HETZNER",
+   "affiliate_url": "https://www.hetzner.com/dedicated-rootserver/matrix-gpu/",
    "claims": [
     {
      "claim": "Hetzner Online GmbH, Gunzenhausen, Germany",
@@ -80,7 +82,8 @@
      "status": "verified (prices not fetchable)",
      "url": "https://www.hetzner.com/dedicated-rootserver/matrix-gpu/"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "gcore",
@@ -90,7 +93,7 @@
    "eu_regions": true,
    "dpa": true,
    "cloud_act_exposure": "low (LU HQ; also has US regions e.g. Manassas)",
-   "affiliate_url": "#AFFILIATE_GCORE",
+   "affiliate_url": "https://gcore.com/pricing/ai",
    "claims": [
     {
      "claim": "Headquartered in Luxembourg, founded 2014",
@@ -107,7 +110,8 @@
      "status": "verified",
      "url": "https://gcore.com/pricing/ai"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "nebius",
@@ -117,7 +121,7 @@
    "eu_regions": true,
    "dpa": true,
    "cloud_act_exposure": "medium (Nasdaq-listed, US regions)",
-   "affiliate_url": "#AFFILIATE_NEBIUS",
+   "affiliate_url": "https://nebius.com/prices",
    "claims": [
     {
      "claim": "Headquartered in Amsterdam, Nasdaq-listed",
@@ -134,7 +138,8 @@
      "status": "unverified (not checked on a regions page)",
      "url": "https://nebius.com/prices"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "verda",
@@ -144,7 +149,7 @@
    "eu_regions": "unverified",
    "dpa": "true (Data Processing Terms in ToS)",
    "cloud_act_exposure": "low",
-   "affiliate_url": "#AFFILIATE_VERDA",
+   "affiliate_url": "https://verda.com/pricing",
    "claims": [
     {
      "claim": "Founded in Helsinki; legal entity DataCrunch Oy",
@@ -161,7 +166,8 @@
      "status": "replaced (404, redirect to verda.com)",
      "url": "https://verda.com/pricing"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "genesiscloud",
@@ -171,14 +177,15 @@
    "eu_regions": "unverified",
    "dpa": "unverified",
    "cloud_act_exposure": "unverified",
-   "affiliate_url": "#AFFILIATE_GENESIS",
+   "affiliate_url": "https://www.genesiscloud.com/",
    "claims": [
     {
      "claim": "All claims",
      "status": "unverified: www.genesiscloud.com TLS failure, apex returns Cloudflare 522 (site down or provider defunct?)",
      "url": "https://www.genesiscloud.com/"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "runpod",
@@ -188,7 +195,7 @@
    "eu_regions": "unverified (Runpod help mentions GDPR-compliant GPU filter)",
    "dpa": "true (custom DPAs only ≥$3k/mo spend)",
    "cloud_act_exposure": "high (US HQ)",
-   "affiliate_url": "#AFFILIATE_RUNPOD",
+   "affiliate_url": "https://runpod.io?ref=8wl9965o",
    "claims": [
     {
      "claim": "Standard DPA published",
@@ -205,7 +212,8 @@
      "status": "unverified (not stated on pages checked)",
      "url": "https://www.runpod.io/legal/data-processing-agreement"
     }
-   ]
+   ],
+   "link_is_referral": true
   },
   {
    "id": "vast",
@@ -215,7 +223,7 @@
    "eu_regions": "per-host (marketplace)",
    "dpa": "true",
    "cloud_act_exposure": "high (US HQ, third-party hosts)",
-   "affiliate_url": "#AFFILIATE_VAST",
+   "affiliate_url": "https://cloud.vast.ai/?ref_id=752083",
    "claims": [
     {
      "claim": "DPA, Vast.ai Inc. as processor under GDPR",
@@ -232,7 +240,8 @@
      "status": "verified (API geolocation field)",
      "url": "https://console.vast.ai/api/v0/bundles/"
     }
-   ]
+   ],
+   "link_is_referral": true
   },
   {
    "id": "lambda",
@@ -242,7 +251,7 @@
    "eu_regions": "unverified",
    "dpa": "unverified",
    "cloud_act_exposure": "high (US HQ)",
-   "affiliate_url": "#AFFILIATE_LAMBDA",
+   "affiliate_url": "https://lambda.ai/pricing",
    "claims": [
     {
      "claim": "Lambda, Inc., Delaware corporation; California law",
@@ -254,7 +263,8 @@
      "status": "unverified (no DPA link found; /legal/data-processing-addendum 404)",
      "url": "https://lambda.ai/legal/privacy-policy"
     }
-   ]
+   ],
+   "link_is_referral": false
   },
   {
    "id": "coreweave",
@@ -264,7 +274,7 @@
    "eu_regions": "unverified",
    "dpa": true,
    "cloud_act_exposure": "high (US HQ)",
-   "affiliate_url": "#AFFILIATE_COREWEAVE",
+   "affiliate_url": "https://www.coreweave.com/pricing",
    "claims": [
     {
      "claim": "Address Livingston, NJ, USA",
@@ -281,7 +291,8 @@
      "status": "unverified (old URLs 404)",
      "url": "https://docs.coreweave.com/policies/terms-of-service"
     }
-   ]
+   ],
+   "link_is_referral": false
   }
  ]
 }

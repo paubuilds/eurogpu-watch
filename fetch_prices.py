@@ -93,6 +93,12 @@ for r in rows:
     if r.get("currency") is None: r["currency"]="USD"; r["native_price_hr"]=r["usd_hr"]
     if r["usd_hr"] is None: r["usd_hr"]=round(r["native_price_hr"]*(usd if r["currency"]=="EUR" else 1),4) if (r["currency"]=="USD" or usd) else None
 fx={"EURUSD":usd,"date":fxdate,"source":"https://api.frankfurter.app (ECB reference rates)"}
+# dedupe: drop watchworks runpod rows when Runpod's own API returned the same GPU+tier
+_rp={(r['gpu'].lower(),r['tier']) for r in rows if r['provider']=='runpod' and 'api.runpod.io' in r['source']}
+# Runpod's own API is authoritative; watchworks names differ slightly (e.g. 'A100 SXM 80GB' vs 'A100 SXM'), so drop all watchworks Runpod rows when the API succeeded
+_n=len(rows)
+if _rp: rows[:]=[r for r in rows if not ('watchworks' in r['source'] and r['provider']=='runpod')]
+status['dedupe']=f"removed {_n-len(rows)} watchworks runpod rows (Runpod API used instead)"
 import os; os.makedirs("data",exist_ok=True)
 json.dump({"generated_at":now(),"status":status,"fx":fx,"prices":rows},open("data/prices.json","w"),indent=1)
 print(status, len(rows))
