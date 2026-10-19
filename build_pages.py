@@ -74,7 +74,7 @@ def page(path,title,desc,body,ld):
 {head(title,desc,path,ld)}<link rel="icon" type="image/svg+xml" href="{B}assets/favicon.svg"><link rel="stylesheet" href="{B}assets/style.css"><link rel="stylesheet" href="{B}assets/pages.css"></head><body>
 <svg class="icon-library" {ICONS}</svg>
 <div class="hero-shell page-shell" id="top"><header class="site-header wrap"><a class="brand" href="{B}" aria-label="EuroGPU.watch home"><span class="brand-mark"><svg><use href="#chip"/></svg></span><span>EuroGPU<span class="brand-light">.watch</span></span></a>
-<nav aria-label="Main navigation"><a href="{B}#explore">GPU prices</a><a href="{B}gpu/h100/">H100</a><a href="{B}gpu/a100/">A100</a><a href="{B}gpu/l40s/">L40S</a><a href="{B}eu-gdpr-gpu-cloud/">EU &amp; GDPR guide</a><a href="#nl-email-card" class="nav-nl">Weekly prices ✉</a></nav>
+<nav aria-label="Main navigation"><a href="{B}#explore">GPU prices</a><a href="{B}gpu/h100/">H100</a><a href="{B}gpu/a100/">A100</a><a href="{B}gpu/l40s/">L40S</a><a href="{B}eu-gdpr-gpu-cloud/">EU &amp; GDPR guide</a><a href="#nl-email-card">Newsletter</a></nav>
 <a class="button nav-button" href="{B}#explore">All prices <svg><use href="#arrow"/></svg></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button></header>
 <section class="page-hero wrap"><p class="hero-overline">LIVE · UPDATED {e(GEN[:16].replace("T"," "))} UTC</p><h1>{h1}</h1><p class="page-lede">{lede}</p></section></div>
 <main class="page-body wrap">{rest}</main>
