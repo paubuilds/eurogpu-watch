@@ -1,6 +1,6 @@
 # EuroGPU.watch
 
-> Live GPU rental price tracker for Europe. Filters by EU incorporation, GDPR DPA availability and US CLOUD Act exposure. Prices are fetched from public provider APIs/pages every ~15 min; last update 2026-10-21T15:37:29+00:00 UTC.
+> Live GPU rental price tracker for Europe. Filters by EU incorporation, GDPR DPA availability and US CLOUD Act exposure. Prices are fetched from public provider APIs/pages every ~15 min; last update 2026-10-21T19:37:34+00:00 UTC.
 
 ## Data
 - [Live prices JSON](https://paubuilds.github.io/eurogpu-watch/data/prices.json): every row has provider, gpu, usd_hr, native price/currency, source URL, fetched_at
@@ -21,14 +21,15 @@
 - [A10 price in Europe](https://paubuilds.github.io/eurogpu-watch/gpu/a10/)
 
 ## Cheapest EU price per GPU (last update)
-- A10: $0.24/GPU-hr at Vast.ai (https://console.vast.ai/api/v0/bundles/, fetched 2026-10-21T15:37:09+00:00)
-- RTX A6000: $0.40/GPU-hr at Vast.ai (https://console.vast.ai/api/v0/bundles/, fetched 2026-10-21T15:37:09+00:00)
-- A100: $0.67/GPU-hr at Vast.ai (https://console.vast.ai/api/v0/bundles/, fetched 2026-10-21T15:37:09+00:00)
-- L4: $0.84/GPU-hr at OVHcloud (https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR, fetched 2026-10-21T15:37:13+00:00)
-- L40S: $1.43/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T15:37:26+00:00)
-- RTX PRO 6000: $2.44/GPU-hr at Verda (ex-DataCrunch) (https://api.datacrunch.io/v1/instance-types, fetched 2026-10-21T15:37:16+00:00)
-- H100: $3.07/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T15:37:26+00:00)
-- H200: $3.57/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T15:37:26+00:00)
-- B200: $8.19/GPU-hr at Verda (ex-DataCrunch) (https://api.datacrunch.io/v1/instance-types, fetched 2026-10-21T15:37:16+00:00)
+- RTX 4090: $0.40/GPU-hr at Vast.ai (https://console.vast.ai/api/v0/bundles/, fetched 2026-10-21T19:37:14+00:00)
+- RTX A6000: $0.77/GPU-hr at Verda (ex-DataCrunch) (https://api.datacrunch.io/v1/instance-types, fetched 2026-10-21T19:37:20+00:00)
+- L4: $0.84/GPU-hr at OVHcloud (https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR, fetched 2026-10-21T19:37:17+00:00)
+- A10: $0.85/GPU-hr at OVHcloud (https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR, fetched 2026-10-21T19:37:17+00:00)
+- L40S: $1.43/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T19:37:32+00:00)
+- A100: $1.53/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T19:37:32+00:00)
+- RTX PRO 6000: $2.44/GPU-hr at Verda (ex-DataCrunch) (https://api.datacrunch.io/v1/instance-types, fetched 2026-10-21T19:37:20+00:00)
+- H100: $3.07/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T19:37:32+00:00)
+- H200: $3.57/GPU-hr at Gcore (https://gcore.com/pricing/ai, fetched 2026-10-21T19:37:32+00:00)
+- B200: $8.19/GPU-hr at Verda (ex-DataCrunch) (https://api.datacrunch.io/v1/instance-types, fetched 2026-10-21T19:37:20+00:00)
 
 Not legal advice. Hetzner and Genesis Cloud prices are not tracked.
