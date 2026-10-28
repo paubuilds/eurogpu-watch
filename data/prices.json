@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-28T03:31:34+00:00",
+ "generated_at": "2026-10-28T10:01:45+00:00",
  "status": {
-  "watchworks": "ok 48",
+  "watchworks": "ok 43",
   "runpod": "ok 69",
-  "vast": "ok 64 offers -> 42 rows",
+  "vast": "ok 64 offers -> 41 rows",
   "ovhcloud": "ok 31",
   "scaleway": "ok 16",
   "verda": "ok 52",
@@ -35,8 +35,8 @@
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.403
   },
@@ -48,8 +48,8 @@
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.0022
   },
@@ -57,105 +57,66 @@
    "provider": "vast",
    "gpu": "A100 SXM 80GB",
    "tier": "any",
-   "usd_hr": 0.6304,
+   "usd_hr": 1.056,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.6304
+   "native_price_hr": 1.056
   },
   {
    "provider": "vast",
    "gpu": "A100 SXM 80GB",
    "tier": "verified",
-   "usd_hr": 0.6681,
+   "usd_hr": 1.056,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.6681
+   "native_price_hr": 1.056
   },
   {
    "provider": "vast",
    "gpu": "H100 NVL",
    "tier": "any",
-   "usd_hr": 3.1089,
+   "usd_hr": 2.4689,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 3.1089
+   "native_price_hr": 2.4689
   },
   {
    "provider": "vast",
    "gpu": "H100 NVL",
    "tier": "verified",
-   "usd_hr": 3.1089,
+   "usd_hr": 2.4689,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 3.1089
-  },
-  {
-   "provider": "vast",
-   "gpu": "H200",
-   "tier": "any",
-   "usd_hr": 5.0537,
-   "location": null,
-   "eu_location": null,
-   "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
-   "currency": "USD",
-   "native_price_hr": 5.0537
-  },
-  {
-   "provider": "vast",
-   "gpu": "H200",
-   "tier": "verified",
-   "usd_hr": 5.0537,
-   "location": null,
-   "eu_location": null,
-   "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
-   "currency": "USD",
-   "native_price_hr": 5.0537
+   "native_price_hr": 2.4689
   },
   {
    "provider": "vast",
    "gpu": "L40S",
    "tier": "any",
-   "usd_hr": 0.3356,
+   "usd_hr": 0.8022,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.3356
-  },
-  {
-   "provider": "vast",
-   "gpu": "L40S",
-   "tier": "verified",
-   "usd_hr": 0.5356,
-   "location": null,
-   "eu_location": null,
-   "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.5356
+   "native_price_hr": 0.8022
   },
   {
    "provider": "vast",
@@ -165,8 +126,8 @@
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.1222
   },
@@ -174,118 +135,92 @@
    "provider": "vast",
    "gpu": "RTX 3090",
    "tier": "verified",
-   "usd_hr": 0.2523,
+   "usd_hr": 0.183,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.2523
+   "native_price_hr": 0.183
   },
   {
    "provider": "vast",
    "gpu": "RTX 4090",
    "tier": "any",
-   "usd_hr": 0.4022,
+   "usd_hr": 0.1348,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.4022
+   "native_price_hr": 0.1348
   },
   {
    "provider": "vast",
    "gpu": "RTX 4090",
    "tier": "verified",
-   "usd_hr": 0.4733,
+   "usd_hr": 0.4719,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.4733
+   "native_price_hr": 0.4719
   },
   {
    "provider": "vast",
    "gpu": "RTX 5090",
    "tier": "any",
-   "usd_hr": 0.4422,
+   "usd_hr": 0.463,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.4422
+   "native_price_hr": 0.463
   },
   {
    "provider": "vast",
    "gpu": "RTX 5090",
    "tier": "verified",
-   "usd_hr": 0.6948,
+   "usd_hr": 0.497,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.6948
+   "native_price_hr": 0.497
   },
   {
    "provider": "vast",
    "gpu": "RTX 6000 Ada",
    "tier": "any",
-   "usd_hr": 0.5393,
+   "usd_hr": 0.6193,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.5393
+   "native_price_hr": 0.6193
   },
   {
    "provider": "vast",
    "gpu": "RTX 6000 Ada",
    "tier": "verified",
-   "usd_hr": 0.5659,
+   "usd_hr": 0.6193,
    "location": null,
    "eu_location": null,
    "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "source_updated_at": "2026-10-28T10:00:32.967Z",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.5659
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX A6000",
-   "tier": "any",
-   "usd_hr": 0.4044,
-   "location": null,
-   "eu_location": null,
-   "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.4044
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX A6000",
-   "tier": "verified",
-   "usd_hr": 0.4044,
-   "location": null,
-   "eu_location": null,
-   "source": "https://gpu.watchworks.dev/api/prices",
-   "source_updated_at": "2026-10-28T03:30:35.950Z",
-   "fetched_at": "2026-10-28T03:31:18+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.4044
+   "native_price_hr": 0.6193
   },
   {
    "provider": "runpod",
@@ -296,7 +231,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 2.39
   },
@@ -309,7 +244,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.79
   },
@@ -322,7 +257,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.19
   },
@@ -335,7 +270,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1
   },
@@ -348,7 +283,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.79
   },
@@ -361,7 +296,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.39
   },
@@ -374,7 +309,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.59
   },
@@ -387,7 +322,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 7.99
   },
@@ -400,7 +335,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 5.98
   },
@@ -413,7 +348,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 8.99
   },
@@ -426,7 +361,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 6.94
   },
@@ -439,7 +374,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.13
   },
@@ -452,7 +387,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.17
   },
@@ -465,7 +400,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.18
   },
@@ -478,7 +413,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.5
   },
@@ -491,7 +426,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.22
   },
@@ -504,7 +439,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.27
   },
@@ -517,7 +452,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.19
   },
@@ -530,7 +465,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.27
   },
@@ -543,7 +478,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.28
   },
@@ -556,7 +491,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.89
   },
@@ -569,7 +504,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.34
   },
@@ -582,7 +517,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.39
   },
@@ -595,7 +530,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.19
   },
@@ -608,7 +543,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.69
   },
@@ -621,7 +556,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 3.99
   },
@@ -634,7 +569,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 2.69
   },
@@ -647,7 +582,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 3.19
   },
@@ -660,7 +595,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 2.59
   },
@@ -673,7 +608,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 2.89
   },
@@ -686,7 +621,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.99
   },
@@ -699,7 +634,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 5.29
   },
@@ -712,7 +647,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 3.59
   },
@@ -725,7 +660,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 3.79
   },
@@ -738,7 +673,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.59
   },
@@ -751,7 +686,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.82
   },
@@ -764,7 +699,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.69
   },
@@ -777,7 +712,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.09
   },
@@ -790,7 +725,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.79
   },
@@ -803,7 +738,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.24
   },
@@ -816,7 +751,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.28
   },
@@ -829,7 +764,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.2
   },
@@ -842,7 +777,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.18
   },
@@ -855,7 +790,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.49
   },
@@ -868,7 +803,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.99
   },
@@ -881,7 +816,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.74
   },
@@ -894,7 +829,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.12
   },
@@ -907,7 +842,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.25
   },
@@ -920,7 +855,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.17
   },
@@ -933,7 +868,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.25
   },
@@ -946,7 +881,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.19
   },
@@ -959,7 +894,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.27
   },
@@ -972,7 +907,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.16
   },
@@ -985,7 +920,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.59
   },
@@ -998,7 +933,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.33
   },
@@ -1011,7 +946,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.57
   },
@@ -1024,7 +959,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.72
   },
@@ -1037,7 +972,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.72
   },
@@ -1050,7 +985,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.96
   },
@@ -1063,7 +998,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.82
   },
@@ -1076,7 +1011,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.64
   },
@@ -1089,7 +1024,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 2.49
   },
@@ -1102,7 +1037,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.69
   },
@@ -1115,7 +1050,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.69
   },
@@ -1128,7 +1063,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.29
   },
@@ -1141,7 +1076,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 2.59
   },
@@ -1154,7 +1089,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 1.69
   },
@@ -1167,7 +1102,7 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.19
   },
@@ -1180,61 +1115,74 @@
    "eu_location": null,
    "source": "https://api.runpod.io/graphql (gpuTypes)",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:18+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.23
   },
   {
    "provider": "vast",
-   "gpu": "GTX 1650",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0472,
-   "location": "Oregon, US",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0472
-  },
-  {
-   "provider": "vast",
    "gpu": "GTX 1070 Ti",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0529,
+   "usd_hr": 0.0537,
    "location": "South Korea, KR",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.0529
+   "native_price_hr": 0.0537
   },
   {
    "provider": "vast",
-   "gpu": "GTX TITAN X",
+   "gpu": "Quadro P4000",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0556,
+   "usd_hr": 0.0611,
+   "location": "Quebec, CA",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.0611
+  },
+  {
+   "provider": "vast",
+   "gpu": "GTX 1080 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.0611,
    "location": "South Korea, KR",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.0556
+   "native_price_hr": 0.0611
   },
   {
    "provider": "vast",
    "gpu": "GTX 1660 S",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0571,
+   "usd_hr": 0.0622,
+   "location": "South Korea, KR",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.0622
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 2060S",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.0651,
    "location": "Vietnam, VN",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.0571
+   "native_price_hr": 0.0651
   },
   {
    "provider": "vast",
@@ -1245,59 +1193,20 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.0606
   },
   {
    "provider": "vast",
-   "gpu": "RTX 3060 laptop",
+   "gpu": "GTX TITAN X",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0643,
-   "location": "New Zealand, NZ",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0643
-  },
-  {
-   "provider": "vast",
-   "gpu": "GTX 1080 Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0632,
+   "usd_hr": 0.0689,
    "location": "South Korea, KR",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0632
-  },
-  {
-   "provider": "vast",
-   "gpu": "Quadro P4000",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0689,
-   "location": "Romania, RO",
-   "eu_location": true,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0689
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 3060",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0689,
-   "location": "Vietnam, VN",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.0689
   },
@@ -1310,22 +1219,35 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.0672
   },
   {
    "provider": "vast",
-   "gpu": "RTX 2060",
+   "gpu": "RTX 3060",
    "tier": "marketplace min, per GPU",
    "usd_hr": 0.0811,
    "location": "South Korea, KR",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.0811
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 2060",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.0806,
+   "location": "South Korea, KR",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.0806
   },
   {
    "provider": "vast",
@@ -1336,35 +1258,9 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.0806
-  },
-  {
-   "provider": "vast",
-   "gpu": "Tesla V100",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0822,
-   "location": "Washington, US",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0822
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 4060",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0815,
-   "location": "Nevada, US",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0815
   },
   {
    "provider": "vast",
@@ -1375,7 +1271,7 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.0811
   },
@@ -1383,53 +1279,53 @@
    "provider": "vast",
    "gpu": "Tesla P40",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1078,
-   "location": "Mexico, MX",
+   "usd_hr": 0.1076,
+   "location": "Thailand, TH",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1076
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3060 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1089,
+   "location": "Israel, IL",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1089
+  },
+  {
+   "provider": "vast",
+   "gpu": "Tesla V100",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1078,
+   "location": "Washington, US",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.1078
   },
   {
    "provider": "vast",
-   "gpu": "GTX 1080",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0544,
-   "location": "South Korea, KR",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0544
-  },
-  {
-   "provider": "vast",
-   "gpu": "Quadro P4000",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0552,
-   "location": "New York, US",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0552
-  },
-  {
-   "provider": "vast",
    "gpu": "RTX A4000",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1104,
+   "usd_hr": 0.1089,
    "location": "Estonia, EE",
    "eu_location": true,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.1104
+   "native_price_hr": 0.1089
   },
   {
    "provider": "vast",
@@ -1440,139 +1336,87 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.1104
   },
   {
    "provider": "vast",
-   "gpu": "RTX 3060",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0607,
-   "location": "Poland, PL",
-   "eu_location": true,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0607
-  },
-  {
-   "provider": "vast",
    "gpu": "RTX 5060",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1219,
+   "usd_hr": 0.1237,
    "location": "New York, US",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.1219
-  },
-  {
-   "provider": "vast",
-   "gpu": "GTX 1660 Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0641,
-   "location": "Saskatchewan, CA",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.0641
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 3080 Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1344,
-   "location": "Poland, PL",
-   "eu_location": true,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.1344
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 3080",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1356,
-   "location": "Henan, CN",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.1356
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 4060 Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1356,
-   "location": "Vietnam, VN",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.1356
+   "native_price_hr": 0.1237
   },
   {
    "provider": "vast",
    "gpu": "RTX 5060 Ti",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1278,
-   "location": "Vietnam, VN",
+   "usd_hr": 0.1149,
+   "location": "Norway, NO",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.1278
+   "native_price_hr": 0.1149
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3060 laptop",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1348,
+   "location": "Norway, NO",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1348
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3080",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1378,
+   "location": "New York, US",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1378
   },
   {
    "provider": "vast",
    "gpu": "RTX 4070",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1437,
-   "location": "Quebec, CA",
+   "usd_hr": 0.1215,
+   "location": "Alberta, CA",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.1437
+   "native_price_hr": 0.1215
   },
   {
    "provider": "vast",
-   "gpu": "RTX 3070",
+   "gpu": "Tesla T4",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.0811,
-   "location": "Quebec, CA",
+   "usd_hr": 0.1496,
+   "location": "Vietnam, VN",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.0811
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 5070 Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.1756,
-   "location": "South Korea, KR",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.1756
+   "native_price_hr": 0.1496
   },
   {
    "provider": "vast",
@@ -1583,98 +1427,137 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.1485
   },
   {
    "provider": "vast",
-   "gpu": "RTX 3060 Ti",
+   "gpu": "RTX 5070",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2037,
-   "location": "Norway, NO",
-   "eu_location": false,
+   "usd_hr": 0.1704,
+   "location": "Sweden, SE",
+   "eu_location": true,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.2037
+   "native_price_hr": 0.1704
   },
   {
    "provider": "vast",
-   "gpu": "RTX 5070",
+   "gpu": "RTX 4070 Ti",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2144,
-   "location": "Quebec, CA",
+   "usd_hr": 0.1822,
+   "location": "Ireland, IE",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1822
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3060 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.0931,
+   "location": "France, FR",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.0931
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 5060 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1969,
+   "location": "Germany, DE",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1969
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3080 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.2022,
+   "location": "Bulgaria, BG",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.2022
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3070",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1019,
+   "location": "Virginia, US",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.2144
+   "native_price_hr": 0.1019
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 4060 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.1352,
+   "location": "Ontario, CA",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.1352
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3090",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.2163,
+   "location": "Poland, PL",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.2163
   },
   {
    "provider": "vast",
    "gpu": "RTX 4000Ada",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2281,
-   "location": "Romania, RO",
+   "usd_hr": 0.2422,
+   "location": "Hungary, HU",
    "eu_location": true,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.2281
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 4070S Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2289,
-   "location": "Quebec, CA",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.2289
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 3090 Ti",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2289,
-   "location": "South Africa, ZA",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.2289
+   "native_price_hr": 0.2422
   },
   {
    "provider": "vast",
    "gpu": "Titan RTX",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2323,
-   "location": "Norway, NO",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.2323
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 4080S",
-   "tier": "marketplace min, per GPU",
    "usd_hr": 0.2422,
-   "location": "Japan, JP",
+   "location": "South Korea, KR",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.2422
   },
@@ -1682,27 +1565,79 @@
    "provider": "vast",
    "gpu": "RTX 4080",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.2689,
-   "location": "North Carolina, US",
+   "usd_hr": 0.2544,
+   "location": "Pennsylvania, US",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.2544
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 3090 Ti",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.2556,
+   "location": "Romania, RO",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.2556
+  },
+  {
+   "provider": "vast",
+   "gpu": "Q RTX 8000",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.2578,
+   "location": "New York, US",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.2578
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX PRO 4000",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.2689,
+   "location": "Texas, US",
+   "eu_location": false,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.2689
   },
   {
    "provider": "vast",
-   "gpu": "RTX 3090",
+   "gpu": "RTX 5070 Ti",
    "tier": "marketplace min, per GPU",
-   "usd_hr": 0.3022,
-   "location": "Australia, AU",
+   "usd_hr": 0.2863,
+   "location": "Spain, ES",
+   "eu_location": true,
+   "source": "https://console.vast.ai/api/v0/bundles/",
+   "source_updated_at": null,
+   "fetched_at": "2026-10-28T10:01:18+00:00",
+   "currency": "USD",
+   "native_price_hr": 0.2863
+  },
+  {
+   "provider": "vast",
+   "gpu": "RTX 4080S",
+   "tier": "marketplace min, per GPU",
+   "usd_hr": 0.3104,
+   "location": "Norway, NO",
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
-   "native_price_hr": 0.3022
+   "native_price_hr": 0.3104
   },
   {
    "provider": "vast",
@@ -1713,22 +1648,9 @@
    "eu_location": false,
    "source": "https://console.vast.ai/api/v0/bundles/",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
+   "fetched_at": "2026-10-28T10:01:18+00:00",
    "currency": "USD",
    "native_price_hr": 0.1615
-  },
-  {
-   "provider": "vast",
-   "gpu": "RTX 5080",
-   "tier": "marketplace min, per GPU",
-   "usd_hr": 0.3356,
-   "location": "Taiwan, TW",
-   "eu_location": false,
-   "source": "https://console.vast.ai/api/v0/bundles/",
-   "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:19+00:00",
-   "currency": "USD",
-   "native_price_hr": 0.3356
   },
   {
    "provider": "ovhcloud",
@@ -1742,7 +1664,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1756,7 +1678,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1770,7 +1692,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1784,7 +1706,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1798,7 +1720,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1812,7 +1734,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1826,7 +1748,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1840,7 +1762,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1854,7 +1776,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1868,7 +1790,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1882,7 +1804,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1896,7 +1818,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1910,7 +1832,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1924,7 +1846,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1938,7 +1860,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1952,7 +1874,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1966,7 +1888,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1980,7 +1902,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -1994,7 +1916,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2008,7 +1930,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2022,7 +1944,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2036,7 +1958,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2050,7 +1972,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2064,7 +1986,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2078,7 +2000,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2092,7 +2014,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2106,7 +2028,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2120,7 +2042,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2134,7 +2056,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2148,7 +2070,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "ovhcloud",
@@ -2162,7 +2084,7 @@
    "eu_location": null,
    "source": "https://eu.api.ovh.com/v1/order/catalog/public/cloud?ovhSubsidiary=FR",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:23+00:00"
+   "fetched_at": "2026-10-28T10:01:23+00:00"
   },
   {
    "provider": "scaleway",
@@ -2176,7 +2098,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:24+00:00"
+   "fetched_at": "2026-10-28T10:01:24+00:00"
   },
   {
    "provider": "scaleway",
@@ -2190,7 +2112,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:24+00:00"
+   "fetched_at": "2026-10-28T10:01:24+00:00"
   },
   {
    "provider": "scaleway",
@@ -2204,7 +2126,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:24+00:00"
+   "fetched_at": "2026-10-28T10:01:24+00:00"
   },
   {
    "provider": "scaleway",
@@ -2218,7 +2140,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:24+00:00"
+   "fetched_at": "2026-10-28T10:01:24+00:00"
   },
   {
    "provider": "scaleway",
@@ -2232,7 +2154,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:24+00:00"
+   "fetched_at": "2026-10-28T10:01:24+00:00"
   },
   {
    "provider": "scaleway",
@@ -2246,7 +2168,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/fr-par-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:24+00:00"
+   "fetched_at": "2026-10-28T10:01:24+00:00"
   },
   {
    "provider": "scaleway",
@@ -2260,7 +2182,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2274,7 +2196,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2288,7 +2210,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2302,7 +2224,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2316,7 +2238,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2330,7 +2252,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2344,7 +2266,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2358,7 +2280,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2372,7 +2294,7 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "scaleway",
@@ -2386,735 +2308,735 @@
    "eu_location": true,
    "source": "https://api.scaleway.com/instance/v1/zones/pl-waw-2/products/servers",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:25+00:00"
+   "fetched_at": "2026-10-28T10:01:25+00:00"
   },
   {
    "provider": "verda",
    "gpu": "GB300",
    "tier": "on-demand 1GB300.32V",
-   "usd_hr": 12.67,
-   "native_price_hr": 12.67,
+   "usd_hr": 12.8,
+   "native_price_hr": 12.8,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "GB300",
    "tier": "on-demand 2GB300.64V",
-   "usd_hr": 12.675,
-   "native_price_hr": 12.675,
+   "usd_hr": 12.8,
+   "native_price_hr": 12.8,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "GB300",
    "tier": "on-demand 4GB300.128V",
-   "usd_hr": 12.6725,
-   "native_price_hr": 12.6725,
+   "usd_hr": 12.8,
+   "native_price_hr": 12.8,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B300",
    "tier": "on-demand 1B300.30V",
-   "usd_hr": 11.02,
-   "native_price_hr": 11.02,
+   "usd_hr": 11.13,
+   "native_price_hr": 11.13,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B300",
    "tier": "on-demand 2B300.60V",
-   "usd_hr": 11.02,
-   "native_price_hr": 11.02,
+   "usd_hr": 11.13,
+   "native_price_hr": 11.13,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B300",
    "tier": "on-demand 4B300.120V",
-   "usd_hr": 11.02,
-   "native_price_hr": 11.02,
+   "usd_hr": 11.13,
+   "native_price_hr": 11.13,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B300",
    "tier": "on-demand 8B300.240V",
-   "usd_hr": 11.02,
-   "native_price_hr": 11.02,
+   "usd_hr": 11.13,
+   "native_price_hr": 11.13,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200",
    "tier": "on-demand 1B200.30V",
-   "usd_hr": 8.608,
-   "native_price_hr": 8.608,
+   "usd_hr": 8.694,
+   "native_price_hr": 8.694,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200",
    "tier": "on-demand 2B200.60V",
-   "usd_hr": 8.61,
-   "native_price_hr": 8.61,
+   "usd_hr": 8.695,
+   "native_price_hr": 8.695,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200",
    "tier": "on-demand 4B200.120V",
-   "usd_hr": 8.6075,
-   "native_price_hr": 8.6075,
+   "usd_hr": 8.695,
+   "native_price_hr": 8.695,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200",
    "tier": "on-demand 8B200.240V",
-   "usd_hr": 8.6075,
-   "native_price_hr": 8.6075,
+   "usd_hr": 8.6937,
+   "native_price_hr": 8.6937,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H200",
    "tier": "on-demand 1H200.141S.44V",
-   "usd_hr": 6.066,
-   "native_price_hr": 6.066,
+   "usd_hr": 6.127,
+   "native_price_hr": 6.127,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H200",
    "tier": "on-demand 2H200.141S.88V",
-   "usd_hr": 6.065,
-   "native_price_hr": 6.065,
+   "usd_hr": 6.125,
+   "native_price_hr": 6.125,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H200",
    "tier": "on-demand 4H200.141S.176V",
-   "usd_hr": 6.065,
-   "native_price_hr": 6.065,
+   "usd_hr": 6.1275,
+   "native_price_hr": 6.1275,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H200",
    "tier": "on-demand 8H200.141S.176V",
-   "usd_hr": 6.0663,
-   "native_price_hr": 6.0663,
+   "usd_hr": 6.1275,
+   "native_price_hr": 6.1275,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H100",
    "tier": "on-demand 1H100.80S.30V",
-   "usd_hr": 4.652,
-   "native_price_hr": 4.652,
+   "usd_hr": 4.699,
+   "native_price_hr": 4.699,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H100",
    "tier": "on-demand 1H100.80S.32V",
-   "usd_hr": 4.652,
-   "native_price_hr": 4.652,
+   "usd_hr": 4.699,
+   "native_price_hr": 4.699,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H100",
    "tier": "on-demand 2H100.80S.80V",
-   "usd_hr": 4.652,
-   "native_price_hr": 4.652,
+   "usd_hr": 4.699,
+   "native_price_hr": 4.699,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H100",
    "tier": "on-demand 4H100.80S.176V",
-   "usd_hr": 4.6525,
-   "native_price_hr": 4.6525,
+   "usd_hr": 4.7,
+   "native_price_hr": 4.7,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "H100",
    "tier": "on-demand 8H100.80S.176V",
-   "usd_hr": 4.6525,
-   "native_price_hr": 4.6525,
+   "usd_hr": 4.6988,
+   "native_price_hr": 4.6988,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "A100 80GB",
    "tier": "on-demand 1A100.22V",
-   "usd_hr": 2.182,
-   "native_price_hr": 2.182,
+   "usd_hr": 2.204,
+   "native_price_hr": 2.204,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "A100 80GB",
    "tier": "on-demand 2A100.44V",
-   "usd_hr": 2.182,
-   "native_price_hr": 2.182,
+   "usd_hr": 2.204,
+   "native_price_hr": 2.204,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "A100 80GB",
    "tier": "on-demand 4A100.88V",
-   "usd_hr": 2.182,
-   "native_price_hr": 2.182,
+   "usd_hr": 2.204,
+   "native_price_hr": 2.204,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "A100 80GB",
    "tier": "on-demand 8A100.176V",
-   "usd_hr": 2.1825,
-   "native_price_hr": 2.1825,
+   "usd_hr": 2.2037,
+   "native_price_hr": 2.2037,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "A100 40GB",
    "tier": "on-demand 1A100.40S.22V",
-   "usd_hr": 1.577,
-   "native_price_hr": 1.577,
+   "usd_hr": 1.593,
+   "native_price_hr": 1.593,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "A100 40GB",
    "tier": "on-demand 8A100.40S.176V",
-   "usd_hr": 1.5775,
-   "native_price_hr": 1.5775,
+   "usd_hr": 1.5925,
+   "native_price_hr": 1.5925,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "Tesla V100",
    "tier": "on-demand 1V100.6V",
-   "usd_hr": 0.234,
-   "native_price_hr": 0.234,
+   "usd_hr": 0.236,
+   "native_price_hr": 0.236,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "Tesla V100",
    "tier": "on-demand 2V100.10V",
-   "usd_hr": 0.234,
-   "native_price_hr": 0.234,
+   "usd_hr": 0.236,
+   "native_price_hr": 0.236,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "Tesla V100",
    "tier": "on-demand 4V100.20V",
-   "usd_hr": 0.234,
-   "native_price_hr": 0.234,
+   "usd_hr": 0.236,
+   "native_price_hr": 0.236,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "Tesla V100",
    "tier": "on-demand 8V100.48V",
-   "usd_hr": 0.234,
-   "native_price_hr": 0.234,
+   "usd_hr": 0.236,
+   "native_price_hr": 0.236,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX PRO 6000",
    "tier": "on-demand 1RTXPRO6000.30V",
-   "usd_hr": 2.567,
-   "native_price_hr": 2.567,
+   "usd_hr": 2.593,
+   "native_price_hr": 2.593,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX PRO 6000",
    "tier": "on-demand 2RTXPRO6000.60V",
-   "usd_hr": 2.567,
-   "native_price_hr": 2.567,
+   "usd_hr": 2.593,
+   "native_price_hr": 2.593,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX PRO 6000",
    "tier": "on-demand 4RTXPRO6000.120V",
-   "usd_hr": 2.5675,
-   "native_price_hr": 2.5675,
+   "usd_hr": 2.5925,
+   "native_price_hr": 2.5925,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX PRO 6000",
    "tier": "on-demand 8RTXPRO6000.240V",
-   "usd_hr": 2.5675,
-   "native_price_hr": 2.5675,
+   "usd_hr": 2.5925,
+   "native_price_hr": 2.5925,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "L40S",
    "tier": "on-demand 1L40S.20V",
-   "usd_hr": 1.845,
-   "native_price_hr": 1.845,
+   "usd_hr": 1.863,
+   "native_price_hr": 1.863,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "L40S",
    "tier": "on-demand 2L40S.40V",
-   "usd_hr": 1.845,
-   "native_price_hr": 1.845,
+   "usd_hr": 1.863,
+   "native_price_hr": 1.863,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "L40S",
    "tier": "on-demand 4L40S.80V",
-   "usd_hr": 1.845,
-   "native_price_hr": 1.845,
+   "usd_hr": 1.863,
+   "native_price_hr": 1.863,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "L40S",
    "tier": "on-demand 8L40S.160V",
-   "usd_hr": 1.845,
-   "native_price_hr": 1.845,
+   "usd_hr": 1.8625,
+   "native_price_hr": 1.8625,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX 6000 Ada",
    "tier": "on-demand 1RTX6000ADA.10V",
-   "usd_hr": 1.453,
-   "native_price_hr": 1.453,
+   "usd_hr": 1.468,
+   "native_price_hr": 1.468,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX 6000 Ada",
    "tier": "on-demand 2RTX6000ADA.20V",
-   "usd_hr": 1.453,
-   "native_price_hr": 1.453,
+   "usd_hr": 1.468,
+   "native_price_hr": 1.468,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX 6000 Ada",
    "tier": "on-demand 4RTX6000ADA.40V",
-   "usd_hr": 1.453,
-   "native_price_hr": 1.453,
+   "usd_hr": 1.468,
+   "native_price_hr": 1.468,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX 6000 Ada",
    "tier": "on-demand 8RTX6000ADA.80V",
-   "usd_hr": 1.4525,
-   "native_price_hr": 1.4525,
+   "usd_hr": 1.4675,
+   "native_price_hr": 1.4675,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX A6000",
    "tier": "on-demand 1A6000.10V",
-   "usd_hr": 0.804,
-   "native_price_hr": 0.804,
+   "usd_hr": 0.812,
+   "native_price_hr": 0.812,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX A6000",
    "tier": "on-demand 2A6000.20V",
-   "usd_hr": 0.804,
-   "native_price_hr": 0.804,
+   "usd_hr": 0.812,
+   "native_price_hr": 0.812,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX A6000",
    "tier": "on-demand 4A6000.40V",
-   "usd_hr": 0.804,
-   "native_price_hr": 0.804,
+   "usd_hr": 0.812,
+   "native_price_hr": 0.812,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX A6000",
    "tier": "on-demand 8A6000.80V",
-   "usd_hr": 0.804,
-   "native_price_hr": 0.804,
+   "usd_hr": 0.812,
+   "native_price_hr": 0.812,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "RTX PRO 6000 CC",
    "tier": "on-demand 1RTXPRO6000.30V.CC",
-   "usd_hr": 2.618,
-   "native_price_hr": 2.618,
+   "usd_hr": 2.645,
+   "native_price_hr": 2.645,
    "currency": "USD",
    "gpus_in_instance": 1,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B300 CC",
    "tier": "on-demand 4B300.120V.CC",
-   "usd_hr": 11.24,
-   "native_price_hr": 11.24,
+   "usd_hr": 11.3525,
+   "native_price_hr": 11.3525,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B300 CC",
    "tier": "on-demand 8B300.240V.CC",
-   "usd_hr": 11.24,
-   "native_price_hr": 11.24,
+   "usd_hr": 11.3525,
+   "native_price_hr": 11.3525,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200 CC",
    "tier": "on-demand 2B200.60V.CC",
-   "usd_hr": 8.78,
-   "native_price_hr": 8.78,
+   "usd_hr": 8.87,
+   "native_price_hr": 8.87,
    "currency": "USD",
    "gpus_in_instance": 2,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200 CC",
    "tier": "on-demand 4B200.120V.CC",
-   "usd_hr": 8.78,
-   "native_price_hr": 8.78,
+   "usd_hr": 8.8675,
+   "native_price_hr": 8.8675,
    "currency": "USD",
    "gpus_in_instance": 4,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "verda",
    "gpu": "B200 CC",
    "tier": "on-demand 8B200.240V.CC",
-   "usd_hr": 8.78,
-   "native_price_hr": 8.78,
+   "usd_hr": 8.8675,
+   "native_price_hr": 8.8675,
    "currency": "USD",
    "gpus_in_instance": 8,
    "location": "unspecified (FI/IS/other)",
    "eu_location": null,
    "source": "https://api.datacrunch.io/v1/instance-types",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:26+00:00"
+   "fetched_at": "2026-10-28T10:01:29+00:00"
   },
   {
    "provider": "gcore",
@@ -3128,7 +3050,7 @@
    "eu_location": null,
    "source": "https://gcore.com/pricing/ai",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "gcore",
@@ -3142,7 +3064,7 @@
    "eu_location": null,
    "source": "https://gcore.com/pricing/ai",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "gcore",
@@ -3156,7 +3078,7 @@
    "eu_location": null,
    "source": "https://gcore.com/pricing/ai",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "gcore",
@@ -3170,7 +3092,7 @@
    "eu_location": null,
    "source": "https://gcore.com/pricing/ai",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "gcore",
@@ -3184,7 +3106,7 @@
    "eu_location": null,
    "source": "https://gcore.com/pricing/ai",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3198,7 +3120,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3212,7 +3134,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3226,7 +3148,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3240,7 +3162,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3254,7 +3176,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3268,7 +3190,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3282,7 +3204,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3296,7 +3218,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3310,7 +3232,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3324,7 +3246,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3338,7 +3260,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3352,7 +3274,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3366,7 +3288,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3380,7 +3302,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3394,7 +3316,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3408,7 +3330,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3422,7 +3344,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3436,7 +3358,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3450,7 +3372,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3464,7 +3386,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3478,7 +3400,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "lambda",
@@ -3492,7 +3414,7 @@
    "eu_location": null,
    "source": "https://lambda.ai/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:32+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3506,7 +3428,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3520,7 +3442,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3534,7 +3456,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3548,7 +3470,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3562,7 +3484,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3576,7 +3498,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3590,7 +3512,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "coreweave",
@@ -3604,7 +3526,7 @@
    "eu_location": null,
    "source": "https://www.coreweave.com/pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:43+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3618,7 +3540,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3632,7 +3554,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3646,7 +3568,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3660,7 +3582,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3674,7 +3596,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3688,7 +3610,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "digitalocean",
@@ -3702,7 +3624,7 @@
    "eu_location": null,
    "source": "https://www.digitalocean.com/pricing/gpu-droplets",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:44+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3716,7 +3638,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3730,7 +3652,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3744,7 +3666,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3758,7 +3680,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3772,7 +3694,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3786,7 +3708,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3800,7 +3722,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3814,7 +3736,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3828,7 +3750,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3842,7 +3764,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3856,7 +3778,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3870,7 +3792,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "hyperstack",
@@ -3884,7 +3806,7 @@
    "eu_location": null,
    "source": "https://www.hyperstack.cloud/gpu-pricing",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:33+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "vultr",
@@ -3898,7 +3820,7 @@
    "eu_location": null,
    "source": "https://api.vultr.com/v2/plans?type=vcg&per_page=500",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:34+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "vultr",
@@ -3912,7 +3834,7 @@
    "eu_location": null,
    "source": "https://api.vultr.com/v2/plans?type=vcg&per_page=500",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:34+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   },
   {
    "provider": "vultr",
@@ -3926,7 +3848,7 @@
    "eu_location": null,
    "source": "https://api.vultr.com/v2/plans?type=vcg&per_page=500",
    "source_updated_at": null,
-   "fetched_at": "2026-10-28T03:31:34+00:00"
+   "fetched_at": "2026-10-28T10:01:45+00:00"
   }
  ]
 }
